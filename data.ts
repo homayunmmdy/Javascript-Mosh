@@ -9,4 +9,12 @@ export const Cardsdata: CardsType[] = [
     live_demo: "https://multi-language-chi.vercel.app/pt",
     source_code: "https://github.com/homayunmmdy/Multi-language",
   },
+  {
+    id: "2",
+    title: "redux sample",
+    url: "https://github.com/homayunmmdy/Update-state-redux/assets/129702378/3eaf45fe-0c4c-44fb-b572-b6c44a454306",
+    tools: ["reactjs", "redux","redux-tool-kit", "tailwindcss"],
+    live_demo: "https://update-state-redux.vercel.app/",
+    source_code: "https://github.com/homayunmmdy/Update-state-redux",
+  },
 ];
