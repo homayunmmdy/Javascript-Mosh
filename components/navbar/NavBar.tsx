@@ -113,6 +113,15 @@ const NavBar = () => {
                   Home
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/DSA"
+                  className="block py-2 pl-3 pr-4 text-gray-700 rounded md:bg-transparent  md:p-0 "
+                  aria-current="page"
+                >
+                  DSA
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
