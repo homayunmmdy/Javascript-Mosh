@@ -16,7 +16,7 @@ const Footer = () => {
 <FaGithub />
           </Link>
           <Link
-            href="www.linkedin.com/in/homayoun-mohammadi-a3590a283"
+            href="https://www.linkedin.com/in/homayoun-mohammadi-a3590a283/"
             target="_blank"
             rel="noopener noreferrer"
           >
