@@ -1,15 +1,21 @@
 import Link from "next/link";
 import React from "react";
 import { CardsType } from "@/types/collection";
+import Image from "next/image";
 
-const Card = ({ id, url, title, source_code, live_demo, tools }: CardsType) => {
+const Card = ({ id, url, imageurl, title, source_code, live_demo, tools }: CardsType) => {
   return (
-    <div>
+    <>
       <div
         key={id}
-        className="max-w-sm bg-white px-6 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500"
+        className="max-w-sm bg-white px-6 h-full pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500"
       >
         <div className="relative">
+          {imageurl ? (
+            <Image width={360} src={imageurl}
+            height={360} alt={title} />
+          ): (
+
           <video
             width="360"
             height="360"
@@ -19,6 +25,7 @@ const Card = ({ id, url, title, source_code, live_demo, tools }: CardsType) => {
             <source src={url} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          )}
         </div>
         <h1 className="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
           {title}
@@ -92,7 +99,7 @@ const Card = ({ id, url, title, source_code, live_demo, tools }: CardsType) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
