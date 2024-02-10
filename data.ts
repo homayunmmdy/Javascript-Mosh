@@ -25,6 +25,14 @@ export const Cardsdata: CardsType[] = [
     live_demo: "https://unite-mock-testing.vercel.app/",
     source_code: "https://github.com/homayunmmdy/Unite-Mock-Testing",
   },
+  {
+    id: "4",
+    title: "Simple Axios data fetching",
+    imageurl: "https://github.com/homayunmmdy/data-fetching-axios/assets/129702378/49400ca9-ee39-4a4d-b34c-07b61bb3cbd4",
+    tools: ["reactjs", "axios", "tailwind","typescript"],
+    live_demo: "https://data-fetching-axios-beta.vercel.app/",
+    source_code: "https://github.com/homayunmmdy/data-fetching-axios",
+  }
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
