@@ -89,4 +89,33 @@ if ans  == -1:
 else:
     print("Target found at index",ans)`,
   },
+  {
+    id: "2",
+    title: "Stack",
+    imageurl:
+      "https://github.com/homayunmmdy/Python/assets/129702378/628fa91f-ecfb-4f3e-94c8-bcbddbfd1573",
+    explanation:
+      "In computer science, a stack is an abstract data type that serves as a collection of elements with two main operations: Push, which adds an element to the collection, and. Pop, which removes the most recently added element.",
+    source_code: `stack = []
+ 
+    # append() function to push
+    # element in the stack
+    stack.append('a')
+    stack.append('b')
+    stack.append('c')
+     
+    print('Initial stack')
+    print(stack)
+     
+    # pop() function to pop
+    # element from stack in
+    # LIFO order
+    print('\nElements popped from stack:')
+    print(stack.pop())
+    print(stack.pop())
+    print(stack.pop())
+     
+    print('\nStack after elements are popped:')
+    print(stack)`,
+  },
 ];
