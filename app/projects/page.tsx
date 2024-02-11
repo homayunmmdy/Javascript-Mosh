@@ -60,6 +60,14 @@ const Projects = () => {
         <li>Drag and Drop Todo list</li>
         <li>Event Calendar</li>
         <li>Transalte</li>
+        <li>Graph (DSA)</li>
+        <li>Sorting (DSA)</li>
+        <li>Searching (DSA)</li>
+        <li>Hash Table (DSA)</li>
+        <li>Linked List (DSA)</li>
+        <li>Queues (DSA)</li>
+        <li>Trees (DSA)</li>
+        <li>Bubble sorting (DSA)</li>
         <li>Game release calender</li>
         <li>Email sender app</li>
         <li>Text Encryptor</li>
