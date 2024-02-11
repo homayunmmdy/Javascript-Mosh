@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div className="p-5">
       <h1 className="bg-clip-text my-3 text-center text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-5xl font-black">
-        6 Project Created
+        7 Project Created
       </h1>
       <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
         List of the project will add
@@ -24,7 +24,6 @@ const Projects = () => {
         <li>Github API</li>
         <li>minesweeper</li>
         <li>Recipe Guide App</li>
-        <li>Gradient Generator</li>
         <li>Expenses Tracker</li>
         <li>Chrome Translator Extension</li>
         <li>Chrome Todo list Extension</li>
