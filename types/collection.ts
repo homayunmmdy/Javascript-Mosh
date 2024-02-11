@@ -4,7 +4,8 @@ export interface CardsType {
   url?: string;
   imageurl?: string;
   tools: string[];
-  live_demo: string;
+  live_demo?: string;
+  demo?: string;
   source_code: string;
 }
 

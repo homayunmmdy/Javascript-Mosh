@@ -32,6 +32,14 @@ export const Cardsdata: CardsType[] = [
     tools: ["reactjs", "axios", "tailwind","typescript"],
     live_demo: "https://data-fetching-axios-beta.vercel.app/",
     source_code: "https://github.com/homayunmmdy/data-fetching-axios",
+  },
+  {
+    id: "5",
+    title: "Device Battery Dectector",
+    imageurl: "https://media.licdn.com/dms/image/D4D12AQGkRh_DmHvbHw/article-cover_image-shrink_423_752/0/1707681642183?e=1713398400&v=beta&t=XVpJX5jrainGX5ycpFfIJWE9cS7UiN-Xr-O8yJ5aRPc",
+    tools: ["reactjs", "tailwind","typescript"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/8c3d654f-0560-49d5-87ee-a52bb3a017aa",
+    source_code: "https://github.com/homayunmmdy/Projects/tree/master/Device%20Battery%20Dectector",
   }
 ];
 export const DSACardsdata: DSACardsType[] = [
