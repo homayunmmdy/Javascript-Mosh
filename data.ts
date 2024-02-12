@@ -63,6 +63,15 @@ export const Cardsdata: CardsType[] = [
     source_code:
       "https://github.com/homayunmmdy/Box-shadow-generator",
   },
+  {
+    id: "7",
+    title: "JSON Search",
+    url: "https://github.com/homayunmmdy/Codestart/assets/129702378/c38e104f-27a0-4c64-83ea-e15b9f442eb4",
+    tools: ["reactjs", "typescript","tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Codestart/assets/129702378/c38e104f-27a0-4c64-83ea-e15b9f442eb4",
+    source_code:
+      "https://github.com/homayunmmdy/Projects/tree/master/search",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
