@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div className="p-5">
       <h1 className="bg-clip-text my-3 text-center text-transparent bg-gradient-to-r from-indigo-500 to-teal-500 text-5xl font-black">
-        8 Project Created
+        9 Project Created
       </h1>
       <h2 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
         List of the project will add
@@ -53,7 +53,6 @@ const Projects = () => {
         <li>Movie Guide</li>
         <li>Password Generator</li>
         <li>Search ablitiy</li>
-        <li>Box shadow generator</li>
         <li>adding card</li>
         <li>Currency Converter</li>
         <li>Drag and Drop Todo list</li>

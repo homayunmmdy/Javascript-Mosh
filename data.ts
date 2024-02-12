@@ -54,6 +54,15 @@ export const Cardsdata: CardsType[] = [
     source_code:
       "https://github.com/homayunmmdy/Gradient-Generator",
   },
+  {
+    id: "7",
+    title: "Box shadow generator",
+    url: "https://github.com/homayunmmdy/Magnify/assets/129702378/7be6a93f-66cb-482a-9706-6406a5a9d414",
+    tools: ["reactjs", "css"],
+    live_demo: "https://box-shadow-generator-bay.vercel.app/",
+    source_code:
+      "https://github.com/homayunmmdy/Box-shadow-generator",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
