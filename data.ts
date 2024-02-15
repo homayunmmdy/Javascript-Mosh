@@ -90,6 +90,14 @@ export const ReactCardsdata: CardsType[] = [
     demo: "https://github.com/homayunmmdy/Projects/assets/129702378/989f9abe-434e-4dac-b4c8-e06987180e29",
     source_code: "https://github.com/homayunmmdy/Projects/tree/master/Simple%20Counter",
   },
+  {
+    id: "3",
+    title: "Temperature Control App",
+    url: "https://github.com/homayunmmdy/Projects/assets/129702378/76ac8bb1-462d-4b59-bd50-31e5544c7780",
+    tools: ["reactjs", "typescript", "tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/76ac8bb1-462d-4b59-bd50-31e5544c7780",
+    source_code: "https://github.com/homayunmmdy/Projects/tree/master/Temperature",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
