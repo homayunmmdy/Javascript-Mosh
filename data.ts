@@ -73,6 +73,16 @@ export const Cardsdata: CardsType[] = [
       "https://github.com/homayunmmdy/Projects/tree/master/search",
   },
 ];
+export const ReactCardsdata: CardsType[] = [
+  {
+    id: "1",
+    title: "React Tailwind Typescript Starter",
+    imageurl: "https://github.com/homayunmmdy/Projects/assets/129702378/2504111b-dec0-440e-b0cc-c1e87ef7c5ae",
+    tools: ["reactjs", "typescript", "tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/2504111b-dec0-440e-b0cc-c1e87ef7c5ae",
+    source_code: "https://github.com/homayunmmdy/Projects/tree/master/starter",
+  },
+];
 export const DSACardsdata: DSACardsType[] = [
   {
     id: "1",
