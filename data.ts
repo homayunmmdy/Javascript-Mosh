@@ -62,16 +62,7 @@ export const Cardsdata: CardsType[] = [
     live_demo: "https://box-shadow-generator-bay.vercel.app/",
     source_code:
       "https://github.com/homayunmmdy/Box-shadow-generator",
-  },
-  {
-    id: "7",
-    title: "JSON Search",
-    url: "https://github.com/homayunmmdy/Codestart/assets/129702378/c38e104f-27a0-4c64-83ea-e15b9f442eb4",
-    tools: ["reactjs", "typescript","tailwindcss"],
-    demo: "https://github.com/homayunmmdy/Codestart/assets/129702378/c38e104f-27a0-4c64-83ea-e15b9f442eb4",
-    source_code:
-      "https://github.com/homayunmmdy/Projects/tree/master/search",
-  },
+  }
 ];
 export const ReactCardsdata: CardsType[] = [
   {
@@ -97,6 +88,15 @@ export const ReactCardsdata: CardsType[] = [
     tools: ["reactjs", "typescript", "tailwindcss"],
     demo: "https://github.com/homayunmmdy/Projects/assets/129702378/76ac8bb1-462d-4b59-bd50-31e5544c7780",
     source_code: "https://github.com/homayunmmdy/Projects/tree/master/Temperature",
+  },
+  {
+    id: "4",
+    title: "JSON Search",
+    url: "https://github.com/homayunmmdy/Codestart/assets/129702378/c38e104f-27a0-4c64-83ea-e15b9f442eb4",
+    tools: ["reactjs", "typescript","tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Codestart/assets/129702378/c38e104f-27a0-4c64-83ea-e15b9f442eb4",
+    source_code:
+      "https://github.com/homayunmmdy/Projects/tree/master/search",
   },
 ];
 export const DSACardsdata: DSACardsType[] = [
