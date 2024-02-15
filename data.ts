@@ -98,6 +98,15 @@ export const ReactCardsdata: CardsType[] = [
     source_code:
       "https://github.com/homayunmmdy/Projects/tree/master/search",
   },
+  {
+    id: "5",
+    title: "React Registration Form",
+    url: "https://github.com/homayunmmdy/Projects/assets/129702378/93b50e44-d7c2-4b5e-9f49-3d1525920dbc",
+    tools: ["reactjs", "typescript","tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/93b50e44-d7c2-4b5e-9f49-3d1525920dbc",
+    source_code:
+      "https://github.com/homayunmmdy/Projects/tree/master/Registration%20Form",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
