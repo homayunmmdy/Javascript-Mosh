@@ -71,6 +71,15 @@ export const Cardsdata: CardsType[] = [
     demo: "https://github.com/homayunmmdy/Codestart/assets/129702378/7dad653e-b201-4b5a-a097-6a276e5055be",
     source_code:
       "https://github.com/homayunmmdy/Projects/tree/master/React%20Router%20Dom",
+  },
+  {
+    id: "9",
+    title: "Expenses Tracker",
+    url: "https://github.com/homayunmmdy/Expense-Traker/assets/129702378/024cbcae-c245-4845-926c-9faaf5cbe6ec",
+    tools: ["reactjs", "react cookie", "tailwind", "typescript"],
+    live_demo: "https://expense-traker-eight.vercel.app/",
+    source_code:
+      "https://github.com/homayunmmdy/Expense-Traker",
   }
 ];
 export const ReactCardsdata: CardsType[] = [
