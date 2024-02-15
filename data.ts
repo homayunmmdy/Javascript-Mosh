@@ -82,6 +82,14 @@ export const ReactCardsdata: CardsType[] = [
     demo: "https://github.com/homayunmmdy/Projects/assets/129702378/2504111b-dec0-440e-b0cc-c1e87ef7c5ae",
     source_code: "https://github.com/homayunmmdy/Projects/tree/master/starter",
   },
+  {
+    id: "2",
+    title: "Simple Counter",
+    url: "https://github.com/homayunmmdy/Projects/assets/129702378/989f9abe-434e-4dac-b4c8-e06987180e29",
+    tools: ["reactjs", "typescript", "tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/989f9abe-434e-4dac-b4c8-e06987180e29",
+    source_code: "https://github.com/homayunmmdy/Projects/tree/master/Simple%20Counter",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
