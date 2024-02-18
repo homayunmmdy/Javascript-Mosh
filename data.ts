@@ -133,6 +133,14 @@ export const ReactCardsdata: CardsType[] = [
     demo: "https://github.com/homayunmmdy/Projects/assets/129702378/90240343-1f69-4716-ae5f-68af58a01c3d",
     source_code: "https://github.com/homayunmmdy/Projects/tree/master/Responsive%20navbar",
   },
+  {
+    id: "7",
+    title: "Quizz App",
+    url: "https://github.com/homayunmmdy/Projects/assets/129702378/b81855a0-8dc0-4cec-b8e3-2e26a516e7bf",
+    tools: ["reactjs", "typescript", "tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/b81855a0-8dc0-4cec-b8e3-2e26a516e7bf",
+    source_code: "https://github.com/homayunmmdy/Projects/tree/master/Quizz%20app",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
