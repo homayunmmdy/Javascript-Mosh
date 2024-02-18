@@ -23,7 +23,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grikd-cols-1 gap-6 mt-16">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grikd-cols-1 gap-6 mt-16 p-3">
             <div>
               <div className="p-7 rounded-xl bg-amber-100 dark:bg-neutral-700/70">
                 <h3 className="text-xl font-semibold mb-7">Home page</h3>

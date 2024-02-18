@@ -125,6 +125,14 @@ export const ReactCardsdata: CardsType[] = [
     source_code:
       "https://github.com/homayunmmdy/Projects/tree/master/Registration%20Form",
   },
+  {
+    id: "6",
+    title: "Responsive Navbar",
+    url: "https://github.com/homayunmmdy/Projects/assets/129702378/90240343-1f69-4716-ae5f-68af58a01c3d",
+    tools: ["reactjs", "typescript", "tailwindcss"],
+    demo: "https://github.com/homayunmmdy/Projects/assets/129702378/90240343-1f69-4716-ae5f-68af58a01c3d",
+    source_code: "https://github.com/homayunmmdy/Projects/tree/master/Responsive%20navbar",
+  },
 ];
 export const DSACardsdata: DSACardsType[] = [
   {
