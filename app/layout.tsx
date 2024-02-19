@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-cover`} style={{backgroundImage: "url('/bg.png')"}}>
         <NavBar />
         {children}
         <Footer />

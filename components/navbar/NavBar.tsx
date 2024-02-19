@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const NavBar = () => {
   return (
     <div>
-      <nav className="bg-white dark:bg-black border-gray-200">
+      <nav className="bg-transparent border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center">
             <span className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
@@ -102,7 +102,7 @@ const NavBar = () => {
                 placeholder="Search..."
               />
             </div>
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 dark:bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  ">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-transparent md:flex-row md:space-x-8 md:mt-0 md:border-0   ">
               <li>
                 <Link
                   href="/explore"
@@ -115,7 +115,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/DSA"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded md:bg-transparent  md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 "
                   aria-current="page"
                 >
                   DSA
@@ -124,7 +124,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/react"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded md:bg-transparent  md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 "
                   aria-current="page"
                 >
                   React
@@ -133,7 +133,7 @@ const NavBar = () => {
               <li>
                 <Link
                   href="/projects"
-                  className="block py-2 pl-3 pr-4 text-gray-700 rounded md:bg-transparent  md:p-0 "
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 "
                   aria-current="page"
                 >
                   Projects
