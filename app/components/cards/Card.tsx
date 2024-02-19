@@ -8,7 +8,7 @@ const Card = ({ id, url, imageurl, title, source_code, live_demo,demo, tools }: 
     <>
       <div
         key={id}
-        className="max-w-sm bg-white px-6 h-full pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500"
+        className="max-w-sm  border border-slate-500/30 px-6 h-full pt-6 pb-2 rounded-xl shadow-xl transform hover:scale-105 transition duration-500"
       >
         <div className="relative">
           {imageurl ? (
@@ -27,7 +27,7 @@ const Card = ({ id, url, imageurl, title, source_code, live_demo,demo, tools }: 
           </video>
           )}
         </div>
-        <h1 className="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
+        <h1 className="mt-4 text-white text-2xl font-bold cursor-pointer">
           {title}
         </h1>
         <div className="my-4">
@@ -53,7 +53,7 @@ const Card = ({ id, url, imageurl, title, source_code, live_demo,demo, tools }: 
                 <button
                   key={index}
                   type="button"
-                  className="text-indigo-700 bg-indigo-100 hover:bg-indigo-50 focus:border-indigo-300 px-2 py-1 text-sm "
+                  className="text-white border border-slate-500/30 px-2 py-1 text-sm shadow-2xl"
                 >
                   {tool}
                 </button>

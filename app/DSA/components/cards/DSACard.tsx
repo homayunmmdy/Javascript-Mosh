@@ -16,7 +16,7 @@ const DSACard = ({
     <>
       <div
         key={id}
-        className="max-w-sm bg-white px-6 h-full pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500"
+        className="max-w-sm border border-slate-500/30 px-6 h-full pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500"
       >
         <div className="relative">
           {imageurl ? (
@@ -33,7 +33,7 @@ const DSACard = ({
             </video>
           )}
         </div>
-        <h1 className="mt-4 text-gray-800 text-2xl font-bold cursor-pointer">
+        <h1 className="mt-4 text-white text-2xl font-bold cursor-pointer">
           {title}
         </h1>
         <div className="my-4">
