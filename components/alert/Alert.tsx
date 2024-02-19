@@ -7,7 +7,7 @@ const Alert = ({type , title}: Props) => {
   return (
     <div>
       <div
-        className="flex items-center p-4 text-sm text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300"
+        className="flex items-center p-4 text-sm rounded-lg  text-gray-300"
         role="alert"
       >
         <svg

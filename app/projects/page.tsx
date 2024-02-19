@@ -12,7 +12,7 @@ const Projects = () => {
               className="w-40 mx-auto"
               alt=""
             />
-            <h2 className="md:text-5xl text-3xl font-semibold tracking-tight">
+            <h2 className="md:text-5xl text-3xl text-white font-semibold tracking-tight">
               List of the Project that will add
             </h2>
             <div className="flex justify-center">
