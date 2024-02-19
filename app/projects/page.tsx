@@ -25,8 +25,8 @@ const Projects = () => {
 
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grikd-cols-1 gap-6 mt-16 p-3">
             <div>
-              <div className="p-7 rounded-xl bg-amber-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">Home page</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">Home page</h3>
 
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400 mb-4">
                   <li className="font-medium text-gray-500 dark:text-gray-400">
@@ -74,8 +74,8 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <div className="p-7 rounded-xl bg-yellow-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">Extension</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">Extension</h3>
 
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400 mb-4">
                   <li className="font-medium text-gray-500 dark:text-gray-400">
@@ -89,7 +89,7 @@ const Projects = () => {
 
                 <Link
                   href="/"
-                  className="py-3 flex items-center justify-center w-full font-semibold rounded-md bg-white hover:bg-purple-500 hover:text-white transition-all duration-500 dark:bg-neutral-900 dark:hover:bg-purple-500 dark:hover:text-white "
+                  className="py-3 flex items-center justify-center w-full font-semibold rounded-md border border-white hover:border-purple-500 hover:bg-purple-500 text-white transition-all duration-500  dark:hover:bg-purple-500 dark:hover:text-white "
                 >
                   Home Page
                   <svg
@@ -106,8 +106,8 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <div className="p-7 rounded-xl bg-emerald-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">DSA</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">DSA</h3>
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400 mb-4">
                   <li className="font-medium text-gray-500 dark:text-gray-400">Graph</li>
                   <li className="font-medium text-gray-500 dark:text-gray-400">Sorting</li>
@@ -138,8 +138,8 @@ const Projects = () => {
             </div>
 
             <div>
-              <div className="p-7 rounded-xl bg-red-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">React</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">React</h3>
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
                   <li className="font-medium leading-7 text-gray-500 mb-6 dark:text-gray-400">
                     weather app
@@ -165,8 +165,8 @@ const Projects = () => {
             </div>
 
             <div>
-              <div className="p-7 rounded-xl bg-red-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">Nodejs</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">Nodejs</h3>
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
                   <li className="font-medium leading-7 text-gray-500 mb-6 dark:text-gray-400">
                     Auth saved in db
@@ -192,8 +192,8 @@ const Projects = () => {
             </div>
 
             <div>
-              <div className="p-7 rounded-xl bg-amber-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">Games</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">Games</h3>
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400 mb-4">
                   <li className="font-medium text-gray-500 dark:text-gray-400">
                     Spin wheel Game
@@ -231,8 +231,8 @@ const Projects = () => {
             </div>
 
             <div>
-              <div className="p-7 rounded-xl bg-emerald-100 dark:bg-neutral-700/70">
-                <h3 className="text-xl font-semibold mb-7">Full UI</h3>
+              <div className="p-7 rounded-xl border border-slate-500/30">
+                <h3 className="text-xl font-semibold mb-7 text-white">Full UI</h3>
                 <ol className="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400 mb-4">
                   <li className="font-medium text-gray-500 dark:text-gray-400">Blog Home page</li>
                   <li className="font-medium text-gray-500 dark:text-gray-400">E-commerce Home page</li>
