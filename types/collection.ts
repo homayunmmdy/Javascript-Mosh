@@ -23,3 +23,10 @@ export interface IdeasType {
   ideas: string[];
   url: string;
 }
+export interface CSSToolkitDataType {
+  id: number;
+  title: string;
+  imgurl?:string;
+  videourl?:string;
+  url: string;
+}

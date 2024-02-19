@@ -1,4 +1,4 @@
-import { CardsType, DSACardsType , IdeasType } from "./types/collection";
+import { CardsType, DSACardsType , IdeasType , CSSToolkitDataType } from "./types/collection";
 
 export const Cardsdata: CardsType[] = [
   {
@@ -177,6 +177,14 @@ export const IdeasData: IdeasType[] = [
     id: 6,
     title: "Nodejs",
     ideas: ["Auth saved in db"],
+    url: "/",
+  },
+];
+export const CSSToolkitData: CSSToolkitDataType[] = [
+  {
+    id: 1,
+    title: "CSS Gradient Generator",
+    videourl: "https://github.com/homayunmmdy/Gradient-Generator/assets/129702378/20c95033-4c6d-42c8-ad8c-d8902c51af0a",
     url: "/",
   },
 ];
