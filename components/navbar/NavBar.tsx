@@ -114,6 +114,15 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
+                  href="/cssToolkit"
+                  className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 "
+                  aria-current="page"
+                >
+                  CSS Toolkit
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/DSA"
                   className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 "
                   aria-current="page"
