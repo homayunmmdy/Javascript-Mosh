@@ -8,10 +8,9 @@ const NavBar = () => {
       <nav className="bg-white dark:bg-black border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center">
-            <img src="/logo.png" className="h-8 mr-3" alt="CodeStart Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowra">
-              CodeStart
-            </span>
+            <span className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl">
+            Code<span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">Start</span>
+          </span>
           </Link>
           <div className="flex md:order-2">
             <button
@@ -106,11 +105,11 @@ const NavBar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 dark:bg-black md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white  ">
               <li>
                 <Link
-                  href="/"
+                  href="/explore"
                   className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
                   aria-current="page"
                 >
-                  Home
+                  Explore
                 </Link>
               </li>
               <li>

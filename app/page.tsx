@@ -1,9 +1,11 @@
-import Cards from "./components/cards/Cards";
+import React from 'react'
 
-export default function Home() {
+const App = () => {
   return (
-    <>
-    <Cards />
-    </>
-  );
+    <div>
+      
+    </div>
+  )
 }
+
+export default App
