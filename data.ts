@@ -1,4 +1,4 @@
-import { CardsType, DSACardsType } from "./types/collection";
+import { CardsType, DSACardsType , IdeasType } from "./types/collection";
 
 export const Cardsdata: CardsType[] = [
   {
@@ -140,6 +140,44 @@ export const ReactCardsdata: CardsType[] = [
     tools: ["reactjs", "typescript", "tailwindcss"],
     demo: "https://github.com/homayunmmdy/Projects/assets/129702378/b81855a0-8dc0-4cec-b8e3-2e26a516e7bf",
     source_code: "https://github.com/homayunmmdy/Projects/tree/master/Quizz%20app",
+  },
+];
+export const IdeasData: IdeasType[] = [
+  {
+    id: 1,
+    title: "Explore",
+    ideas: ["Text speech","Map","JSON Parcer","Chat app", "Google auth","Speech to text", "Chart","CryptoCurrecny Price App","Aspect Ratio Calculator","Typeing Test","Github API","Recipe Guide App"],
+    url: "/explore",
+  },
+  {
+    id: 2,
+    title: "DSA",
+    ideas: ["Graph","Budgetting App", "Sorting", "Queues","Trees","Bubble sorting","Searching","Hash Table","Linked List"],
+    url: "/DSA",
+  },
+  {
+    id: 3,
+    title: "Games",
+    ideas: ["Spin wheel Game","Coin Flip Game","Tik Tac Toe","Chess","Flappy", "BreakOut Game", "minesweeper","2048 Game","Snake Game"],
+    url: "/DSA",
+  },
+  {
+    id: 4,
+    title: "React",
+    ideas: ["Weather App","Calculator App","Music player","Newsletter","Alarm App"],
+    url: "/react",
+  },
+  {
+    id: 5,
+    title: "Extension",
+    ideas: ["Chrome Todo list","Chrome Translator"],
+    url: "/",
+  },
+  {
+    id: 6,
+    title: "Nodejs",
+    ideas: ["Auth saved in db"],
+    url: "/",
   },
 ];
 export const DSACardsdata: DSACardsType[] = [

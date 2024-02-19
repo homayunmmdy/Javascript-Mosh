@@ -17,3 +17,9 @@ export interface DSACardsType {
   explanation: string;
   source_code: string;
 }
+export interface IdeasType {
+  id: number;
+  title: string;
+  ideas: string[];
+  url: string;
+}
