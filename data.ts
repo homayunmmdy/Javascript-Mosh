@@ -47,15 +47,6 @@ export const Cardsdata: CardsType[] = [
   },
   {
     id: "6",
-    title: "CSS Gradient Generator",
-    url: "https://github.com/homayunmmdy/Walmart/assets/129702378/0cc5257d-0f62-4451-a03f-cbd84e640045",
-    tools: ["reactjs", "css", "tailwind", "typescript"],
-    live_demo: "https://gradient-generator-three-phi.vercel.app/",
-    source_code:
-      "https://github.com/homayunmmdy/Gradient-Generator",
-  },
-  {
-    id: "7",
     title: "Box shadow generator",
     url: "https://github.com/homayunmmdy/Magnify/assets/129702378/7be6a93f-66cb-482a-9706-6406a5a9d414",
     tools: ["reactjs", "css"],
@@ -64,7 +55,7 @@ export const Cardsdata: CardsType[] = [
       "https://github.com/homayunmmdy/Box-shadow-generator",
   },
   {
-    id: "8",
+    id: "7",
     title: "Simplest React Router DOM Project",
     url: "https://github.com/homayunmmdy/Codestart/assets/129702378/7dad653e-b201-4b5a-a097-6a276e5055be",
     tools: ["reactjs", "react router dom", "tailwind", "typescript"],
@@ -73,7 +64,7 @@ export const Cardsdata: CardsType[] = [
       "https://github.com/homayunmmdy/Projects/tree/master/React%20Router%20Dom",
   },
   {
-    id: "9",
+    id: "8",
     title: "Expenses Tracker",
     url: "https://github.com/homayunmmdy/Expense-Traker/assets/129702378/024cbcae-c245-4845-926c-9faaf5cbe6ec",
     tools: ["reactjs", "react cookie", "tailwind", "typescript"],
@@ -185,7 +176,7 @@ export const CSSToolkitData: CSSToolkitDataType[] = [
     id: 1,
     title: "CSS Gradient Generator",
     videourl: "https://github.com/homayunmmdy/Gradient-Generator/assets/129702378/20c95033-4c6d-42c8-ad8c-d8902c51af0a",
-    url: "/",
+    url: "https://gradient-generator-three-phi.vercel.app/",
   },
 ];
 export const DSACardsdata: DSACardsType[] = [

@@ -1,11 +1,10 @@
-import Link from "next/link";
 import Idea from "./Idea";
 import {IdeasData } from "@/data";
 
 const Ideas = () => {
   return (
     <div>
-      <div className="py-20 flex items-center justify-center">
+      <div className="py-20 px-3 flex items-center justify-center">
         <div className="container">
           <div className="mx-auto max-w-4xl sm:text-center">
             <img

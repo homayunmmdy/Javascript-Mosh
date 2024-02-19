@@ -1,6 +1,9 @@
 import React from "react";
 
-const GetStartBtn = ({ title }) => {
+interface Props {
+  title: string
+}
+const GetStartBtn = ({ title }:Props) => {
   return (
     <>
       <button

@@ -4,7 +4,7 @@ import GetStartBtn from './GetStartBtn'
 const Hero = () => {
   return (
     <div>
-      <div className="container pt-24  mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <div className="container px-3 pt-24  mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div className="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
           <h1 className="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
             The
@@ -16,7 +16,7 @@ const Hero = () => {
           <p className="leading-normal text-white text-base md:text-2xl mb-8 text-center md:text-left">
             You will find lot's of free opensource and great tools helps to write code faster and better
           </p>
-          <Link href="/explore">
+          <Link href="/explore" className='flex justify-center'>
           <GetStartBtn title="Get start now"/>
           </Link>
 
