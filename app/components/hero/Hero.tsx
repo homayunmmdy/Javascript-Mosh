@@ -1,5 +1,5 @@
+import GradientBtn from '@/components/buttons/GradientBtn'
 import Link from 'next/link'
-import GetStartBtn from './GetStartBtn'
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
             You will find lot's of free opensource and great tools helps to write code faster and better
           </p>
           <Link href="/explore" className='flex justify-center'>
-          <GetStartBtn title="Get start now"/>
+          <GradientBtn title="Get start now"/>
           </Link>
 
         </div>

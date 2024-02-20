@@ -3,7 +3,7 @@ import React from "react";
 interface Props {
   title: string
 }
-const GetStartBtn = ({ title }:Props) => {
+const GradientBtn = ({ title }:Props) => {
   return (
     <>
       <button
@@ -16,4 +16,4 @@ const GetStartBtn = ({ title }:Props) => {
   );
 };
 
-export default GetStartBtn;
+export default GradientBtn;
