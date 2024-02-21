@@ -159,6 +159,15 @@ const NavBar = () => {
                         Projects
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        href="/contactus"
+                        className="text-white hover:text-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+                        aria-current="page"
+                      >
+                        Contactus
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
