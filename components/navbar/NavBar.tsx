@@ -11,7 +11,7 @@ const NavBar = () => {
   };
   return (
     <div>
-      <nav className="bg-transparent border-gray-200">
+      <nav className="bg-transparent border-b border-gray-200 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link href="/" className="flex items-center">
             <span className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl">

@@ -5,28 +5,39 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="flex bg-transparent flex-col space-y-10 justify-center m-10">
-        <div className="flex justify-center space-x-5">
+      <div className="border-t border-gray-200"></div>
+      <footer className="text-sm leading-6 my-10 max-w-screen-xl mx-auto">
+        <div className="sm:flex justify-between text-white ">
+          <div className="mb-6 sm:mb-0 flex justify-center items-center	">
+            <p>Copyright © {new Date().getFullYear()} CodeStart</p>
+            <p className="sm:ml-4 sm:pl-4 sm:border-l sm:border-slate-200 dark:sm:border-slate-200/5">
+              <div className="flex justify-center text-center space-x-5">
+                <Link
+                  href="https://github.com/homayunmmdy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  <FaGithub />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/homayoun-mohammadi-a3590a283/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  <FaLinkedinIn />
+                </Link>
+              </div>
+            </p>
+          </div>
           <Link
-            href="https://github.com/homayunmmdy"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-white"
+            href="/"
           >
-            <FaGithub />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/homayoun-mohammadi-a3590a283/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-          >
-            <FaLinkedinIn />
+            Powered by Homayoun
           </Link>
         </div>
-        <p className="text-center text-white font-medium">
-          Powered by Homayoun
-        </p>
       </footer>
     </div>
   );
