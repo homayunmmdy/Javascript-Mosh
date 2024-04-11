@@ -14,7 +14,7 @@ const Hero = () => {
                   Hello, I'm Homayoun
                   <hr className="border-yellow-600	absolute w-8 left-[-3rem] top-[50%] h-[1px]" />
                 </div>
-                <h1 className="text-4xl font-light  sm:text-5xl md:text-7xl leading-10 tracking-wide leading-loose	 text-white">
+                <h1 className="text-4xl font-light  sm:text-5xl md:text-7xl leading-10 tracking-wide leading-loose text-white">
                   Endless learning is a journey of discovering new things
                 </h1>
               </div>

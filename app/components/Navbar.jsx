@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <>
             <header style={{ background: "linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%)" }}>
-                <div className="navbar px-6 w-[92%] mx-auto py-7 ">
+                <div className="navbar px-6 w-[98%] md:w-[92%] mx-auto py-7 ">
                     <div className="navbar-start">
 
                         <Link href="/" className="text-3xl font-bold text-white">
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </div>
                 <hr className=" border-b-1 border-gray-500 lg:hidden" />
                  {isOpen && (<ul
-                className=" w-[92%] mx-auto px-6 lg:hidden"
+                className=" w-[98%] md:w-[92%] mx-auto px-6 lg:hidden"
                 >
                     {nav.map((item) => (
                         <li key={item.id} className="mx-1 py-3">

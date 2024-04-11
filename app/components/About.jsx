@@ -12,7 +12,7 @@ const About = () => {
                         About
                     </div>
                     <h1 className="text-4xl font-light  sm:text-5xl md:text-7xl leading-10 tracking-wide leading-loose	 text-white">
-                        Endless learning is a journey of discovering new things
+                        life is began when fear ends. High Risk High Reward don't fear just keep pushing more
                     </h1>
                     <button className="btn btn-outline my-6 text-white hover:bg-white">
                         <span className='text-xl text-white  hover:text-black'> More About Me</span>
