@@ -72,7 +72,7 @@ const Navbar = () => {
                 </div>
                 <hr className=" border-b-1 border-gray-500 lg:hidden" />
                  {isOpen && (<ul
-                className=" w-[92%] mx-auto px-6 "
+                className=" w-[92%] mx-auto px-6 lg:hidden"
                 >
                     {nav.map((item) => (
                         <li key={item.id} className="mx-1 py-3">
