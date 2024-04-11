@@ -9,7 +9,6 @@ export const metadata = {
   title: `${SiteConfig.name}`,
   description: SiteConfig.description,
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
