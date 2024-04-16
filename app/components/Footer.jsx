@@ -16,10 +16,10 @@ const Footer = () => {
                     <div className="col-span-12 md:grid-span-6 xl:col-span-3">
                         <h6 className="footer-title text-4xl font-light text-gray-50">Services</h6>
                         <nav className='flex flex-col gap-3 pl-3'>
-                            <a className="text-white hover:text-gray-100 text-xl ">Branding</a>
-                            <a className="text-white hover:text-gray-100 text-xl ">Design</a>
-                            <a className="text-white hover:text-gray-100 text-xl ">Marketing</a>
-                            <a className="text-white hover:text-gray-100 text-xl ">Advertisement</a>
+                            <a className="text-white hover:text-gray-100 text-xl">Branding</a>
+                            <a className="text-white hover:text-gray-100 text-xl">Design</a>
+                            <a className="text-white hover:text-gray-100 text-xl">Marketing</a>
+                            <a className="text-white hover:text-gray-100 text-xl">Advertisement</a>
                         </nav>
                     </div>
                     <div className="col-span-12 md:grid-span-6 xl:col-span-3">

@@ -28,8 +28,8 @@ const Navbar = () => {
                         <ul className="menu menu-horizontal px-1">
                             {nav.map((item) => (
                                 <li key={item.id} className="mx-1">
-                                    {pathname === item.link ? <Link href={item.link} className="font-light text-gray-400 hover:text-gray-50 text-xl">{item.name}</Link> :
-                                        <Link href={item.link}>{item.name}</Link>}
+                                    {pathname === item.link ? <Link href={item.link} className="font-light text-gray-50 text-xl">{item.name}</Link> :
+                                        <Link href={item.link} className="font-light text-gray-400 hover:text-gray-50 text-xl">{item.name}</Link>}
                                 </li>
                             ))}
                         </ul>
@@ -73,8 +73,8 @@ const Navbar = () => {
                 >
                     {nav.map((item) => (
                         <li key={item.id} className="mx-1 py-3">
-                            {pathname === item.link ? <Link href={item.link} className="font-light text-gray-400 hover:text-gray-50 text-xl">{item.name}</Link> :
-                                <Link href={item.link}>{item.name}</Link>}
+                            {pathname === item.link ? <Link href={item.link} className="font-light text-gray-50 text-xl">{item.name}</Link> :
+                                <Link href={item.link} className="font-light text-gray-400 hover:text-gray-50 text-xl">{item.name}</Link>}
                         </li>
                     ))}
                     <li className="w-full">

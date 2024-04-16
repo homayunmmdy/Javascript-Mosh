@@ -1,7 +1,6 @@
 import React from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
-import GetStarted from './components/GetStarted'
 import SkillsSec from './components/SkillsSec'
 
 const Home = () => {
@@ -16,12 +15,6 @@ const Home = () => {
       <div className='px-5 w-[98%] md:w-[92%] mx-auto'>
         <SkillsSec />
       </div>
-      <div style={{ background: "hsla(127, 8%, 14%, 1)" }}>
-        <div className='px-5 w-[98%] md:w-[92%] mx-auto'>
-          <GetStarted />
-        </div>
-      </div>
-
     </>
   )
 }
