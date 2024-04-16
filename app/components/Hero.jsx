@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="h-full w-full">
         <div className="mx-auto py-10">
           <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12 md:col-span-7 xl:col-span-8">
+            <div className="col-span-12 md:col-span-8 xl:col-span-9">
               <div>
                 <div className="text-white relative mb-2">
                   Hello, I'm Homayoun
@@ -19,7 +19,7 @@ const Hero = () => {
                 </h1>
               </div>
             </div>
-            <div className="col-span-12 md:col-span-5 xl:col-span-4">
+            <div className="col-span-12 md:col-span-4 xl:col-span-3">
               <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-0 sm:col-span-4 md:hidden md:col-span-0">
                   <div className=" hidden sm:flex gap-4 items-center">

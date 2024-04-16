@@ -4,6 +4,7 @@ import SiteConfig from "@/app/config/site";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LuMenu } from "react-icons/lu";
+import WorkBtn from "./WorkBtn";
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -62,17 +63,13 @@ const Navbar = () => {
                                     </svg>
                                 </button>
                             </div>
-                            <button className="btn btn-warning hidden lg:block ">
-                                <Link href="/contacts" className="font-light text-2xl">
-                                    Let's Work Together
-                                </Link>
-                            </button>
+                            <div className="hidden lg:block"><WorkBtn /></div>
                         </div>
                     </div>
                 </div>
                 <hr className=" border-b-1 border-gray-500 lg:hidden" />
-                 {isOpen && (<ul
-                className=" w-[98%] md:w-[92%] mx-auto px-6 lg:hidden"
+                {isOpen && (<ul
+                    className=" w-[98%] md:w-[92%] mx-auto px-6 lg:hidden"
                 >
                     {nav.map((item) => (
                         <li key={item.id} className="mx-1 py-3">
@@ -80,11 +77,9 @@ const Navbar = () => {
                                 <Link href={item.link}>{item.name}</Link>}
                         </li>
                     ))}
-                    <button className="btn btn-warning w-full">
-                        <Link href="/contacts" className="font-bold text-xl">
-                            Let's Work Together
-                        </Link>
-                    </button>
+                    <li className="w-full">
+                        <WorkBtn />
+                    </li>
                 </ul>)}
             </header>
         </>
