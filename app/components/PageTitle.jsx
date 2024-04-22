@@ -3,7 +3,7 @@ import React from 'react'
 const PageTitle = ({ titr, title , background }) => {
     return (
         <>
-            <div className="hero bg-center	bg-cover h-3/4" style={{ backgroundImage: `url(${background})` }}>
+            <div className="hero bg-center	bg-cover h-4/5" style={{ backgroundImage: `url(${background})` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content py-12	sm:py-36">
                     <div className="max-w-7xl">
