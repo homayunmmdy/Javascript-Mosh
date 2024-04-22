@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteConfig from "@/app/config/site"
 import Navbar from "./components/Navbar";
 import Feedback from "./components/Feedback";
+import Footer from "./components/Footer";
 const inter = Inter({ subsets: ["greek"] });
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Feedback />
+        <Footer />
       </body>
     </html>
   );

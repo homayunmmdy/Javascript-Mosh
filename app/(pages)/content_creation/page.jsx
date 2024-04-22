@@ -3,7 +3,7 @@ import React from 'react'
 
 const ContentCreationPage = () => {
     return (
-        <div><PageTitle titr="Content Creation" title="Description" /></div>
+        <div><PageTitle titr="Content Creation" title="Description" background="bg5.jpg"/></div>
     )
 }
 
