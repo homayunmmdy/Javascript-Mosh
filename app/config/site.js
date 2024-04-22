@@ -7,7 +7,7 @@ const SiteConfig = {
     {
       id: 1,
       name: "Home",
-      link: "",
+      link: "/",
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ const SiteConfig = {
     {
       id: 6,
       name: "Content Creation",
-      link: "/content",
+      link: "/content_creation",
     },
   ],
 };

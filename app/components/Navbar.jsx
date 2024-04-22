@@ -48,8 +48,8 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal p-1">
                         {nav.map((item) => (
                             <li key={item.id} className="mx-1">
-                                {pathname === item.link ? <Link href={item.link} className="bg-base-300 rounded-xl">{item.name}</Link> :
-                                    <Link href={item.link}>{item.name}</Link>}
+                                {pathname === item.link ? <Link href={item.link} className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl font-bold text-white">{item.name}</Link> :
+                                    <Link className="border-transparent	 border-2  hover:border-sky-400 ease-in-out hover:bg-base-100" href={item.link}>{item.name}</Link>}
                             </li>
                         ))}
                     </ul>

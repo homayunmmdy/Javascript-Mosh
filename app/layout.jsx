@@ -3,7 +3,7 @@ import "./Font.css";
 import "./globals.css";
 import SiteConfig from "@/app/config/site"
 import Navbar from "./components/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["greek"] });
 
 export const metadata = {
   title: SiteConfig.name_en,
