@@ -4,7 +4,7 @@ import Gallery from './components/Gallery'
 
 const Home = () => {
   return (
-    <div className='w-[98%] md:w-[90%] mx-auto'>
+    <div className='w-[98%] md:w-[95%] mx-auto'>
       <Hero />
       <Gallery />
     </div>
