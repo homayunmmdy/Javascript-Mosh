@@ -1,10 +1,14 @@
 @font-face {
-  font-family: "CustomFont";
+  font-family: "CustomIranSans";
   font-style: normal;
   font-weight: 400;
-  src: url("/Fonts/Serif.woff2") format("woff2"),
+  src: url("/Fonts/IRANSansWeb.eot");
+  src: url("/Fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("/Fonts/IRANSansWeb.woff2") format("woff2"),
+    url("/Fonts/IRANSansWeb.woff") format("woff"),
+    url("/Fonts/IRANSansWeb.ttf") format("truetype");
 }
 
 body {
-  font-family: "CustomFont", Tahoma !important;
+  font-family: "CustomIranSans", Tahoma !important;
 }
