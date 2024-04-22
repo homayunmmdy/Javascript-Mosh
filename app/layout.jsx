@@ -3,6 +3,7 @@ import "./Font.css";
 import "./globals.css";
 import SiteConfig from "@/app/config/site"
 import Navbar from "./components/Navbar";
+import Feedback from "./components/Feedback";
 const inter = Inter({ subsets: ["greek"] });
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
         <main className="mt-16 bg-base-100">
           {children}
         </main>
+        <Feedback />
       </body>
     </html>
   );
