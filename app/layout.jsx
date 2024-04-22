@@ -5,7 +5,7 @@ import  SiteConfig from "@/app/config/site"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: `${SiteConfig.name} | ${SiteConfig.name_en}`,
+  title: SiteConfig.name_en,
   description: SiteConfig.description,
 };
 

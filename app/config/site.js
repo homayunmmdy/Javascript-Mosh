@@ -1,9 +1,8 @@
 const SiteConfig = {
-  name: "اسم سایت",
-  name_en: "name web",
-  description: "دکسکرپشن سایت",
-  lang: "fa",
-  dir: "rtl",
+  name: "ai club",
+  description: " find the lot's usefull information about ai",
+  lang: "en",
+  dir: "ltr",
 };
 
 export default SiteConfig;
