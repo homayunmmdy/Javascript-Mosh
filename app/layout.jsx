@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
       <body className={inter.className}>
         <Navbar />
-        <main className="mt-16">
+        <main className="mt-16 bg-base-100">
           {children}
         </main>
       </body>
