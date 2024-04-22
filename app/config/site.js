@@ -34,6 +34,11 @@ const SiteConfig = {
       name: "Content Creation",
       link: "/content_creation",
     },
+    {
+      id: 7,
+      name: "Contacts",
+      link: "/contacts",
+    },
   ],
 };
 

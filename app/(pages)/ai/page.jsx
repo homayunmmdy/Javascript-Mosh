@@ -6,7 +6,7 @@ const AIPage = () => {
     return (
         <div>
             <PageTitle titr="Artificial Intelligence" title="Description" background="bg1.jpg" />
-            <ServicePosts />
+            <ServicePosts secid={1}/>
         </div>
     )
 }
