@@ -12,9 +12,27 @@ export const metadata = {
   description: SiteConfig.description,
 };
 
+const header = (
+  <>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMH041X0TK"></script>
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+  
+        gtag('config', 'G-TMH041X0TK');
+            `,
+      }}
+    />
+  </>
+);
+
 export default function RootLayout({ children }) {
   return (
     <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
+      {header}
       <body className={inter.className}>
         <Navbar />
         <main className="mt-[76px] bg-base-100">
