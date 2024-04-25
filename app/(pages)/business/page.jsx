@@ -5,7 +5,7 @@ import React from 'react'
 const BusinessPage = () => {
     return (
         <div>
-            <PageTitle titr="Business" title="Description" background="bg2.jpg" />
+            <PageTitle titr="Business" title="Empower your business with transformative capabilites of AI.Enhance streamline operations and unlock new insights." background="bg2.jpg" />
             <ServicePosts secid={2} />
         </div>
     )

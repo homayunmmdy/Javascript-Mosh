@@ -26,8 +26,8 @@ const SiteConfig = {
     },
     {
       id: 5,
-      name: "Life",
-      link: "/life",
+      name: "Learning",
+      link: "/learning",
     },
     {
       id: 6,

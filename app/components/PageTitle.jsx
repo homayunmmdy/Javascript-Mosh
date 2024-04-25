@@ -10,7 +10,7 @@ const PageTitle = ({ titr, title , background }) => {
                         <div className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400 mb-2 text-2xl brightness-[90%]">
                             {titr}
                         </div>
-                        <h2 className='text-white text-4xl font-light  sm:text-5xl md:text-7xl tracking-wide  sm:leading-loose text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque corrupti similique doloribus iste nulla blanditiis.</h2>
+                        <h2 className='text-white text-4xl font-light h-72  sm:text-5xl md:text-7xl tracking-wide  sm:leading-loose text-center'>{title}</h2>
                     </div>
                 </div>
             </div>

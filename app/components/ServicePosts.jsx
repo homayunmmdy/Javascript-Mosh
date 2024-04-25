@@ -38,6 +38,7 @@ const ServicePosts = ({secid}) => {
     const filteredData = tickets.filter((item) => item.section === `${secid}`);
 
     return (
+        <div className="bg-base-200">
         <div className="w-[98%] md:w-[95%] mx-auto py-4">
             {loading ? <PostCardScelton /> :
                 (
@@ -65,6 +66,7 @@ const ServicePosts = ({secid}) => {
                     </>
                 )
             }
+        </div>
         </div>
     );
 };
