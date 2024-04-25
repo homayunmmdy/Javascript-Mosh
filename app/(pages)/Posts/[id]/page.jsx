@@ -1,11 +1,12 @@
 "use client";
 import RecentPosts from "@/app/components/RecentPosts";
 import SinglePost from "@/app/components/SinglePost";
-const Ticket = () => {
+import PostSeclton from "./PostSeclton";
+const Post = () => {
     const post = SinglePost();
 
     if (!post) {
-        return <h1>Loading</h1>
+        return <PostSeclton />
     }
 
     return (
@@ -41,4 +42,4 @@ const Ticket = () => {
     );
 };
 
-export default Ticket;
+export default Post;
