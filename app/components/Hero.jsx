@@ -14,7 +14,7 @@ const Hero = () => {
                         </div>
 
                         <div className="flex items-center w-full col-span-6">
-                            <div className="px-6 h-96 lg:h-100% w-full max-w-2xl col-span-6 flex items-center mx-auto">
+                            <div className="px-6 h-full sm:h-96 lg:h-100% w-full max-w-2xl col-span-6 flex items-center mx-auto">
                                 <div className="h-full w-full">
                                     <div>
                                         <MainSlider />

@@ -8,47 +8,49 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay"
-// import SlidesSeclton from "./SlidesSeclton"
+import SlidesSeclton from "./SlidesSeclton";
 
 const MainSlider = () => {
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(false);
     const [recentSize] = useState(-5);
 
 
     useEffect(() => {
         const fetchData = async () => {
             try {
+                setLoading(true)
                 const response = await axios.get(`/api/Posts`);
                 setData(response.data.posts.slice(recentSize));
+                setLoading(false)
             } catch (error) {
                 console.error("Error fetching data:", error);
+                setLoading(false)
             }
         };
 
         fetchData();
     }, [recentSize]);
-    // if (!data) {
-    //     return <SlidesSeclton />;
-    // }
 
     return (
         <div className="sm:p-3">
-            <Swiper
-                modules={[Navigation, EffectFade, Autoplay]}
-                effect="fade"
-                spaceBetween={5}
-                slidesPerView={1}
-                navigation
-                loop={true}
-                onSwiper={(swiper) => console.log(swiper)}
-            >
-                {data.map((filteredData, _index) => (
-                    <SwiperSlide key={_index}>
-                        <Slides id={_index} post={filteredData} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-
+            {loading ? <SlidesSeclton /> : (
+                <Swiper
+                    modules={[Navigation, EffectFade, Autoplay]}
+                    effect="fade"
+                    spaceBetween={5}
+                    slidesPerView={1}
+                    navigation
+                    loop={true}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
+                    {data.map((filteredData, _index) => (
+                        <SwiperSlide key={_index}>
+                            <Slides id={_index} post={filteredData} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            )}
         </div>
     );
 };

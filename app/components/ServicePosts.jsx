@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PostCard from "./PostCard";
+import PostCardScelton from "./PostCardScelton";
 
 const ServicePosts = ({secid}) => {
     const [tickets, setTickets] = useState([]);
@@ -28,6 +29,7 @@ const ServicePosts = ({secid}) => {
     }, [pageSize]);
 
     const handlePageChange = (pageNumber) => {
+        setLoading(true)
         setCurrentPage(pageNumber);
         const startIndex = (pageNumber - 1) * pageSize;
         const endIndex = pageNumber * pageSize;
@@ -37,10 +39,10 @@ const ServicePosts = ({secid}) => {
 
     return (
         <div className="w-[98%] md:w-[95%] mx-auto py-4">
-            {loading ? <h1>Loading</h1> :
+            {loading ? <PostCardScelton /> :
                 (
                     <>
-                        <div className="lg:grid grid-cols-2 xl:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                             {filteredData.map((filteredTicket) => (
                                 <PostCard
                                     key={filteredTicket.id} 
