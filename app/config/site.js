@@ -1,6 +1,6 @@
 const SiteConfig = {
-  name: "AI Club",
-  description: " find the lot's usefull information about ai",
+  name: "AI Cluby",
+  description: "be head of the AI with AI-cluby",
   lang: "en",
   dir: "ltr",
   nav: [

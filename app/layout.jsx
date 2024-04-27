@@ -5,6 +5,7 @@ import SiteConfig from "@/app/config/site"
 import Navbar from "./components/Navbar";
 import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
+import Script from "next/script";
 const inter = Inter({ subsets: ["greek"] });
 
 export const metadata = {
@@ -14,8 +15,8 @@ export const metadata = {
 
 const header = (
   <>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMH041X0TK"></script>
-    <script
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-TMH041X0TK"/>
+    <Script
       dangerouslySetInnerHTML={{
         __html: `
         window.dataLayer = window.dataLayer || [];

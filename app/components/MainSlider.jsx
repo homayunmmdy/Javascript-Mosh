@@ -42,7 +42,6 @@ const MainSlider = () => {
                     slidesPerView={1}
                     navigation
                     loop={true}
-                    onSwiper={(swiper) => console.log(swiper)}
                 >
                     {data.map((filteredData, _index) => (
                         <SwiperSlide key={_index}>
