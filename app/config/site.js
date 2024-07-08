@@ -1,42 +1,27 @@
 const SiteConfig = {
-  name: "AI Cluby",
-  description: "be head of the AI with AI-cluby",
-  lang: "en",
-  dir: "ltr",
+  name: "آخرین هوش مصنوعی",
+  description: "آخرین هوش مصنوعی:‌به دنیای هوش مصنوعی قدرتمند خوش آمدید",
+  lang: "fa",
+  dir: "rtl",
   nav: [
     {
       id: 1,
-      name: "Home",
+      name: "خانه",
       link: "/",
     },
     {
       id: 2,
-      name: " AI",
-      link: "/ai",
+      name: "آرشیو",
+      link: "/archive",
     },
     {
       id: 3,
-      name: "Business",
-      link: "/business",
+      name: "سوالات متدوال",
+      link: "/FAQs",
     },
     {
       id: 4,
-      name: "Coding",
-      link: "/coding",
-    },
-    {
-      id: 5,
-      name: "Learning",
-      link: "/learning",
-    },
-    {
-      id: 6,
-      name: "Content Creation",
-      link: "/content_creation",
-    },
-    {
-      id: 7,
-      name: "Contacts",
+      name: "تماس با ما",
       link: "/contacts",
     },
   ],

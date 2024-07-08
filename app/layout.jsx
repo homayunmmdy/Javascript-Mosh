@@ -3,7 +3,6 @@ import "./Font.css";
 import "./globals.css";
 import SiteConfig from "@/app/config/site"
 import Navbar from "./components/Navbar";
-import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 import Script from "next/script";
 const inter = Inter({ subsets: ["greek"] });
@@ -39,7 +38,6 @@ export default function RootLayout({ children }) {
         <main className="mt-[76px] bg-base-100">
           {children}
         </main>
-        <Feedback />
         <Footer />
       </body>
     </html>

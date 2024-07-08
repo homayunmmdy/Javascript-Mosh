@@ -2,6 +2,7 @@
   font-family: "CustomIranSans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("/Fonts/IRANSansWeb.eot");
   src: url("/Fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
     url("/Fonts/IRANSansWeb.woff2") format("woff2"),
