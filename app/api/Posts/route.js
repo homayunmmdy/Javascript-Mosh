@@ -1,14 +1,19 @@
+import CashData from "@/app/(admin)/cash/CashData";
 import Post from "../../models/Post";
 import { NextResponse } from "next/server";
+import { handleErrorResponse } from "@/app/(admin)/util/apiUtil";
 
 export async function GET() {
   try {
-    const posts = await Post.find();
-
-    return NextResponse.json({ posts }, { status: 200 });
+    if (process.env.NEXT_PUBLIC_STATUS == "dev") {
+      return NextResponse.json({ posts: CashData }, { status: 200 });
+    } else {
+      const posts = await Model.find();
+      return NextResponse.json({ posts }, { status: 200 });
+    }
   } catch (err) {
-    console.log(err);
-    return NextResponse.json({ message: "Error", err }, { status: 500 });
+    console.error(err);
+    return handleErrorResponse(err);
   }
 }
 

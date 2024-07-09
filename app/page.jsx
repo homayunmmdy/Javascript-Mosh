@@ -1,12 +1,9 @@
-import React from 'react'
-import Hero from './components/Hero'
-import Gallery from './components/Gallery'
+import { Posts } from './components/sections'
 
 const Home = () => {
   return (
-    <div className='w-[98%] md:w-[95%] mx-auto'>
-      <Hero />
-      <Gallery />
+    <div className='w-[94%] md:w-[92%] mx-auto'>
+      <Posts />
     </div>
   )
 }

@@ -1,9 +1,9 @@
 "use client";
 import RecentPosts from "@/app/components/RecentPosts";
-import SinglePost from "@/app/components/SinglePost";
 import PostSeclton from "./PostSeclton";
+import useSinglePost from "@/app/hooks/useSinglePost";
 const Post = () => {
-    const post = SinglePost();
+    const post = useSinglePost();
 
     if (!post) {
         return <PostSeclton />

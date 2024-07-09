@@ -1,11 +1,12 @@
-import Post from "../../../models/Post";
+import {  handleGetSingleRequest } from "@/app/(admin)/util/apiUtil";
 import { NextResponse } from "next/server";
+import CashData from "@/app/(admin)/cash/CashData";
+import Post from "@/app/models/Post";
 
 export async function GET(request, { params }) {
   const { id } = params;
+  return handleGetSingleRequest(Post, id , CashData);
 
-  const foundTicket = await Post.findOne({ _id: id });
-  return NextResponse.json({ foundTicket }, { status: 200 });
 }
 
 export async function PUT(req, { params }) {
@@ -19,7 +20,10 @@ export async function PUT(req, { params }) {
       ...ticketData,
     });
 
-    return NextResponse.json({ message: "پست مورد نظر با موفقیت بروز شد" }, { status: 200 });
+    return NextResponse.json(
+      { message: "پست مورد نظر با موفقیت بروز شد" },
+      { status: 200 }
+    );
   } catch (error) {
     console.log(error);
     return NextResponse.json({ message: "Error", error }, { status: 500 });
@@ -31,7 +35,10 @@ export async function DELETE(req, { params }) {
     const { id } = params;
 
     await Post.findByIdAndDelete(id);
-    return NextResponse.json({ message: "پست مورد نظر با موفیقت حذف شد" }, { status: 200 });
+    return NextResponse.json(
+      { message: "پست مورد نظر با موفیقت حذف شد" },
+      { status: 200 }
+    );
   } catch (error) {
     console.log(error);
     return NextResponse.json({ message: "Error", error }, { status: 500 });

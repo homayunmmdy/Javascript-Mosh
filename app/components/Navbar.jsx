@@ -9,7 +9,7 @@ const Navbar = () => {
     const nav = SiteConfig.nav;
     return (
         <div className="fixed top-0 left-0 right-0 navbar bg-base-100 z-[50]">
-            <div className='w-[98%] md:w-[95%] mx-auto'>
+            <div className='w-[94%] md:w-[92%] mx-auto'>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <button tabIndex={0} className="px-3 lg:hidden">
