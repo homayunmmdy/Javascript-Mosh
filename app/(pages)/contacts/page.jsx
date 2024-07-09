@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import SiteConfig from "@/app/config/site";
 import Circles from "@/app/components/Circles";
+import { CONTACTS_API_URL } from "@/app/(admin)/util/apiConstants";
 
 const ContactsPage = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ const ContactsPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/Contacts", {
+      const response = await fetch(`${CONTACTS_API_URL}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

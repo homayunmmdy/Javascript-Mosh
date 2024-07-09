@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay"
 import SlidesSeclton from "./SlidesSeclton";
+import { POST_API_URL } from "../(admin)/util/apiConstants";
 
 const MainSlider = () => {
     const [data, setData] = useState([]);
@@ -20,7 +21,7 @@ const MainSlider = () => {
         const fetchData = async () => {
             try {
                 setLoading(true)
-                const response = await axios.get(`/api/Posts`);
+                const response = await axios.get(`${POST_API_URL}`);
                 setData(response.data.posts.slice(recentSize));
                 setLoading(false)
             } catch (error) {

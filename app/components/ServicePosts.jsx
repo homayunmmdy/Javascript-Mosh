@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PostCard from "./PostCard";
 import PostCardScelton from "./PostCardScelton";
+import { POST_API_URL } from "../(admin)/util/apiConstants";
 
 const ServicePosts = ({secid}) => {
     const [tickets, setTickets] = useState([]);
@@ -15,7 +16,7 @@ const ServicePosts = ({secid}) => {
         const fetchData = async () => {
             try {
                 setLoading(true)
-                const ticketResponse = await axios.get(`/api/Posts`);
+                const ticketResponse = await axios.get(`${POST_API_URL}`);
                 setTickets(ticketResponse.data.posts);
                 setFilteredTickets(ticketResponse.data.posts.slice(0, pageSize));
                 setLoading(false);

@@ -4,9 +4,10 @@ import PublicationsSkeleton from './PostsSkeleton'
 import useFetch from '@/app/(admin)/hooks/useFetch'
 import PostCard from '../../PostCard'
 import GradientBtn from '../../elements/GradientBtn'
+import { POST_API_URL } from '@/app/(admin)/util/apiConstants'
 
 const Posts = () => {
-    const { data, loading } = useFetch("/api/Posts");
+    const { data, loading } = useFetch(`${POST_API_URL}`);
     const postsData = data?.slice(-12)
     if (loading) {
         return <PublicationsSkeleton />
