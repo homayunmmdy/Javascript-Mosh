@@ -5,10 +5,11 @@ import useFetch from '@/app/(admin)/hooks/useFetch'
 import PostCard from '../../PostCard'
 import GradientBtn from '../../elements/GradientBtn'
 import { POST_API_URL } from '@/app/(admin)/util/apiConstants'
+import useGetSection from '@/app/hooks/useGetSection'
 
 const Posts = () => {
-    const { data, loading } = useFetch(`${POST_API_URL}`);
-    const postsData = data?.slice(-12)
+    const { data, loading } = useGetSection(POST_API_URL, -12, 1);
+
     if (loading) {
         return <PublicationsSkeleton />
     }
@@ -16,7 +17,7 @@ const Posts = () => {
         <>
             <div className=" mx-auto py-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-5">
-                    {postsData?.map(publication => (
+                    {data?.map(publication => (
                         <PostCard post={publication} />
                     ))}
                 </div>

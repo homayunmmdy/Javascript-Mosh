@@ -29,8 +29,11 @@ const Post = () => {
                                 loading="lazy"
                             />
                             <div className="prose max-w-none">
+                            <div id="pos-article-display-card-94403"></div>
                                 <p className="p-3 text-lg leading-9	">{post.body}</p>
+                                <div id="pos-article-text-card-94410"></div>
                             </div>
+                            <div id="pos-article-display-94970"></div>
                         </div>
                         <div className="w-full md:w-1/4 px-4">
                             <RecentPosts />

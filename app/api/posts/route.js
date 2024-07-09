@@ -8,7 +8,7 @@ export async function GET() {
     if (process.env.NEXT_PUBLIC_STATUS == "dev") {
       return NextResponse.json({ posts: CashData }, { status: 200 });
     } else {
-      const posts = await Model.find();
+      const posts = await Post.find();
       return NextResponse.json({ posts }, { status: 200 });
     }
   } catch (err) {
