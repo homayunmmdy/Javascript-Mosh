@@ -1,11 +1,11 @@
 "use client"
 import useGetLatestPosts from '@/app/hooks/useGetLatestPosts'
-import PostCard from '../../PostCard'
-import GradientBtn from '../../elements/GradientBtn'
+import { useState } from 'react'
 import PublicationsSkeleton from './PostsSkeleton'
+import PostCard from './PostCard'
 
 const LatestPosts = () => {
-    const [recentSize] = useState(-5);
+    const [recentSize] = useState(-4);
     const { posts, loading } = useGetLatestPosts(recentSize);
 
     if (loading) {

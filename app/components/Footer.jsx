@@ -1,29 +1,30 @@
-import React from 'react'
-import SiteConfig from '../config/site'
-import { FaXTwitter , FaYoutube } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
+import SiteConfig from "../config/site"
 
 const Footer = () => {
     return (
-        <div>
-            <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-                <nav className="grid grid-flow-col gap-4">
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Feedback</a>
-                    <a className="link link-hover">Support</a>
-                </nav>
-                <nav>
-                    <div className="grid grid-flow-col gap-4">
-                        <FaXTwitter size={24} />
-                        <FaLinkedinIn size={24}/>
-                        <FaYoutube size={24}/>
+        <footer className="w-full py-10">
+            <div className="mx-auto w-[94%] md:w-[92%] px-4 sm:px-6 lg:px-8">
+                <div className=" ">
+                    <ul className="text-lg  flex items-center justify-center flex-col md:flex-row  py-10 gap-6 md:gap-8 transition-all duration-500">
+                        <li ><a href="/" className="text-gray-800 hover:text-blue-600">خانه</a></li>
+                        <li ><a href="/contacts" className="text-gray-800 hover:text-blue-600">تماس با ما</a></li>
+                        <li ><a href="/archive" className="text-gray-800 hover:text-blue-600">آرشیو</a></li>
+                        <li ><a href="/privacy_policy" className="text-gray-800 hover:text-blue-600">حریم خصوصی</a></li>
+                        <li ><a href="/FAQs" className="text-gray-800 hover:text-blue-600">سوالات متدول</a></li>
+                    </ul>
+                </div>
+
+                <div className="py-7 border-t border-gray-200">
+                    <div className="flex items-center flex-col-reverse justify-between md:flex-row">
+                        <span className="text-sm text-gray-500 mt-7 md:mt-0"> تمام حقوق مادی و معنوی این سایت متعلق به <a href="/">{SiteConfig.name}</a> می باشد و استفاده از مطالب با ذکر منبع بلامانع است.</span>
+                        <div className="flex items-center flex-col  gap-4 md:flex-row">
+                            <input type="text" name="email" className="py-3 px-6 h-12 border border-gray-300 shadow-sm rounded-full focus:outline-none" placeholder="ایمیل خود را وارد کنید.." />
+                            <button className="h-12 py-3.5 px-7 text-sm bg-blue-600 shadow-sm rounded-full text-white font-bold hover:bg-blue-700">سابسکرایب</button>
+                        </div>
                     </div>
-                </nav>
-                <aside>
-                    <p>Copyright © {new Date().getFullYear()} - All right reserved by {SiteConfig.name}</p>
-                </aside>
-            </footer>
-        </div>
+                </div>
+            </div>
+        </footer>
     )
 }
 
