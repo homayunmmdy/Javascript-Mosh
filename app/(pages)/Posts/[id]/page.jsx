@@ -37,6 +37,7 @@ const Post = () => {
                         </div>
                         <div className="w-full md:w-1/4 px-4">
                             <RecentPosts />
+                            <div id="pos-article-display-94981"></div>
                         </div>
                     </div>
                 </div>

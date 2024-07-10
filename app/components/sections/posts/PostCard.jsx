@@ -14,7 +14,7 @@ const BlogsCard = ({ post }) => {
                 </div>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title transition duration-300 delay-100 group-hover:text-blue-500">{post.title}</h2>
-                    <p>{post.description}</p>
+                    <p>{post.description.slice(0, 160)}</p>
                 </div>
             </a>
         </>
