@@ -1,9 +1,10 @@
 import Heading from './components/elements/Heading'
-import { LatestPosts, PostsSec } from './components/sections'
+import { LatestPosts, MainSec, PostsSec } from './components/sections'
 
 const Home = () => {
   return (
     <div className='w-[94%] md:w-[92%] mx-auto'>
+      <MainSec />
       <PostsSec title="فکت" secid={5}/>
       <div id="pos-article-display-94687"></div>
       <Heading title="آخبرین پست ها"/>
