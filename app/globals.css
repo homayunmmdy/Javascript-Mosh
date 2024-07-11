@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 768px) {
+  .snap-x {
+      overflow-x: auto;
+  }
+
+  .snap-center {
+      scroll-snap-align: center;
+  }
+}

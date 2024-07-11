@@ -1,7 +1,7 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import PostCard from "./PostCard";
+import PostCard from "./sections/posts/PostCard";
 import PostCardScelton from "./PostCardScelton";
 import { POST_API_URL } from "../(admin)/util/apiConstants";
 

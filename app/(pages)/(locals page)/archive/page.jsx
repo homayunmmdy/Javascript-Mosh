@@ -2,7 +2,7 @@
 import useFetch from "@/app/(admin)/hooks/useFetch";
 import { POST_API_URL } from "@/app/(admin)/util/apiConstants";
 import Heading from "@/app/components/elements/Heading";
-import PostCard from "@/app/components/PostCard";
+import PostCard from "@/app/components/sections/posts/PostCard";
 import { PostsSkeleton } from "@/app/components/sections";
 
 const ArchiveSections = () => {
