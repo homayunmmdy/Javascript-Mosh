@@ -33,7 +33,7 @@ const header = (
 
 export default function RootLayout({ children }) {
   return (
-    <html lang={SiteConfig.lang} dir={SiteConfig.dir}>
+    <html lang={SiteConfig.lang} dir={SiteConfig.dir} data-theme="cupcake">
       {header}
       <body>
         <Navbar />

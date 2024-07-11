@@ -15,7 +15,7 @@ const Navbar = () => {
                         <button tabIndex={0} className="px-3 lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-5 w-5 text-slate-950	"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -34,8 +34,8 @@ const Navbar = () => {
                         >
                             {nav.map((item) => (
                                 <li key={item.id} className="mx-1">
-                                    {pathname === item.link ? <Link href={item.link} className="bg-base-300 rounded-xl">{item.name}</Link> :
-                                        <Link href={item.link}>{item.name}</Link>}
+                                    {pathname === item.link ? <Link href={item.link} className="bg-base-300 text-slate-950	 rounded-xl">{item.name}</Link> :
+                                        <Link className="text-slate-950" href={item.link}>{item.name}</Link>}
                                 </li>
                             ))}
                         </ul>
@@ -48,22 +48,52 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal p-1">
                         {nav.map((item) => (
                             <li key={item.id} className="mx-1">
-                                {pathname === item.link ? <Link href={item.link} className="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl font-bold text-white">{item.name}</Link> :
-                                    <Link className="border-transparent	 border-2  hover:border-sky-400 ease-in-out hover:bg-base-100" href={item.link}>{item.name}</Link>}
+                                {pathname === item.link ? <Link href={item.link} className="text-slate-950 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl font-bold text-white">{item.name}</Link> :
+                                    <Link className="border-transparent	 border-2 text-slate-950	  hover:border-sky-400 ease-in-out hover:bg-base-100" href={item.link}>{item.name}</Link>}
                             </li>
                         ))}
                     </ul>
                 </div>
                 <div className="flex navbar-end">
                     <div className="m-1">
-                        <div className="relative inline-flex  group">
-                            <div
-                                className="absolute transitiona-all duration-1000 opacity-70 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+                        <div className="dropdown">
+                            <div tabIndex={0} role="button" className="btn m-1">
+                                تم ها
+                                <svg
+                                    width="12px"
+                                    height="12px"
+                                    className="inline-block h-2 w-2 fill-current opacity-60"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 2048 2048">
+                                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                                </svg>
                             </div>
-                            <a href="#" title="Pro Member"
-                                className="relative inline-flex items-center justify-center p-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                                role="button">Pro Member
-                            </a>
+                            <ul tabIndex={0} className="dropdown-content left-0 bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
+                                <li>
+                                    <input
+                                        type="radio"
+                                        name="theme-dropdown"
+                                        className="theme-controller btn btn-sm btn-block btn-ghost justify-start text-slate-950	"
+                                        aria-label="پیش فرض"
+                                        value="cupcake" />
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        name="theme-dropdown"
+                                        className="theme-controller btn btn-sm btn-block btn-ghost justify-start text-slate-950	"
+                                        aria-label="مشکی"
+                                        value="dark" />
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        name="theme-dropdown"
+                                        className="theme-controller btn btn-sm btn-block btn-ghost justify-start text-slate-950	"
+                                        aria-label="روشن"
+                                        value="light" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

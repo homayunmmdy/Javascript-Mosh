@@ -2,15 +2,15 @@ import SiteConfig from "../config/site"
 
 const Footer = () => {
     return (
-        <footer className="w-full py-10">
+        <footer className="w-full py-10 bg-base-200">
             <div className="mx-auto w-[94%] md:w-[92%] px-4 sm:px-6 lg:px-8">
-                <div className=" ">
+                <div>
                     <ul className="text-lg  flex items-center justify-center flex-col md:flex-row  py-10 gap-6 md:gap-8 transition-all duration-500">
-                        <li ><a href="/" className="text-gray-800 hover:text-blue-600">خانه</a></li>
-                        <li ><a href="/contacts" className="text-gray-800 hover:text-blue-600">تماس با ما</a></li>
-                        <li ><a href="/archive" className="text-gray-800 hover:text-blue-600">آرشیو</a></li>
-                        <li ><a href="/privacy_policy" className="text-gray-800 hover:text-blue-600">حریم خصوصی</a></li>
-                        <li ><a href="/FAQs" className="text-gray-800 hover:text-blue-600">سوالات متدول</a></li>
+                        <li ><a href="/" className="text-slate-950 hover:text-blue-600">خانه</a></li>
+                        <li ><a href="/contacts" className="text-slate-950 hover:text-blue-600">تماس با ما</a></li>
+                        <li ><a href="/archive" className="text-slate-950 hover:text-blue-600">آرشیو</a></li>
+                        <li ><a href="/privacy_policy" className="text-slate-950 hover:text-blue-600">حریم خصوصی</a></li>
+                        <li ><a href="/FAQs" className="text-slate-950 hover:text-blue-600">سوالات متدول</a></li>
                     </ul>
                 </div>
 
