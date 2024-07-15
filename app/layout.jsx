@@ -6,8 +6,14 @@ import Footer from "./components/Footer";
 import Script from "next/script";
 
 export const metadata = {
-  title: SiteConfig.name_en,
-  description: SiteConfig.description,
+  title: `${SiteConfig.name} | ${SiteConfig.name_en}`,
+  description: SiteConfig.description.slice(0, 160),
+  keywords: SiteConfig.keywords,
+  robots: SiteConfig.robots,
+  authors: SiteConfig.authors,
+  verification: {
+    google: "gTVvXWgVqXKU6AfSRkuQa4O39VGzRS9zcA4y9eT3uUo",
+  },
 };
 
 const header = (

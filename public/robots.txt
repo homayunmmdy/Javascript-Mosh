@@ -1,0 +1,9 @@
+
+User-agent: *
+Disallow: /private/
+Disallow: /no-index/
+Allow: /
+
+Disallow: /archive
+Disallow: /privacy_policy
+Disallow: /FAQs
