@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const MainItem = ({ post }) => {
@@ -11,13 +12,18 @@ const MainItem = ({ post }) => {
             title={post.title}
             alt={post.title}
           >
-            <img
+            <Image
               src={post.imgurl}
               alt={post.title}
               title={post.title}
+              blurDataURL={post.imgurl}
+              placeholder="blur"
               width={500}
               height={270}
               className="w-full h-full"
+              layout="responsive"
+              loading="lazy"            
+              priority
             />
           </a>
         </div>

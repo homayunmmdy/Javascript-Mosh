@@ -7,7 +7,7 @@ const Home = () => {
       <MainSec />
       <PostsSec title="فکت" secid={5}/>
       <div id="pos-article-display-94687"></div>
-      <Heading title="آخبرین پست ها"/>
+      <Heading title="آخرین پست ها"/>
       <LatestPosts/>
       <div id="pos-article-display-94407"></div>
       <PostsSec title="زندگی" secid={4}/>
