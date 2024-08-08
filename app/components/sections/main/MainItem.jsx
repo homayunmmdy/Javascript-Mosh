@@ -23,7 +23,6 @@ const MainItem = ({ post }) => {
               className="w-full h-full"
               layout="responsive"
               loading="lazy"            
-              priority
             />
           </a>
         </div>

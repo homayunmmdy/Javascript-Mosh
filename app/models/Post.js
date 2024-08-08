@@ -6,10 +6,10 @@ mongoose.Promise = global.Promise;
 const postSchema = new Schema(
   {
     title: String,
-    imgurl:String,
+    imgurl: String,
     description: String,
-    service: String,
     section: String,
+    service: String,
     body: String,
   },
   {

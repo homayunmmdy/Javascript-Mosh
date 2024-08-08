@@ -3,7 +3,7 @@ import mongoose, { Schema } from "mongoose";
 mongoose.connect(process.env.MONGODB_URI);
 mongoose.Promise = global.Promise;
 
-const sectionSchema = new Schema(
+const servicesSchema = new Schema(
   {
     name: {
       type: String,
@@ -19,6 +19,6 @@ const sectionSchema = new Schema(
   }
 );
 
-const Section = mongoose.models.Section || mongoose.model("Section", sectionSchema);
+const Services = mongoose.models.Services || mongoose.model("Services", servicesSchema);
 
-export default Section;
+export default Services;

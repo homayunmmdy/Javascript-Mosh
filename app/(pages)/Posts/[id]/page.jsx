@@ -40,7 +40,6 @@ const Post = () => {
                                 placeholder="blur"
                                 width={880}
                                 height={500}
-                                priority
                                 layout="responsive"
                                 loading="lazy"                              
                             />
