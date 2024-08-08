@@ -8,8 +8,6 @@ const postSchema = new Schema(
     title: String,
     imgurl: String,
     description: String,
-    section: String,
-    service: String,
     body: String,
   },
   {
