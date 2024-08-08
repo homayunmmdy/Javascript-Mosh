@@ -1,12 +1,9 @@
-import Link from 'next/link'
 import React from 'react'
 
-const GradientBtn = ({ title, link }) => {
+const GradientBtn = ({ title }) => {
     return (
         <>
-            <button aria-label={`دکمه ${title}`} className="transition duration-300 ease-in-out hover:to-blue-500 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl font-bold text-center text-sm p-3 shadow-lg flex justify-between">
-                <Link className="font-medium  text-white" href={link}>{title}</Link>
-            </button>
+            <button className="bg-gradient-to-r from-blue-500 to-red-500 text-white px-4 py-2 text-lg rounded font-medium focus:ring ring-black ring-opacity-10 gradient element-to-rotate">{title}</button>
         </>
     )
 }

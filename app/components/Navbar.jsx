@@ -3,6 +3,7 @@ import React from "react";
 import SiteConfig from "@/app/config/site";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import GradientBtn from "./elements/GradientBtn";
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -55,47 +56,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="flex navbar-end">
-                    <div className="m-1">
-                        <div className="dropdown">
-                            <div tabIndex={0} role="button" className="btn m-1">
-                                تم ها
-                                <svg
-                                    width="12px"
-                                    height="12px"
-                                    className="inline-block h-2 w-2 fill-current opacity-60"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 2048 2048">
-                                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-                                </svg>
-                            </div>
-                            <ul tabIndex={0} className="dropdown-content left-0 bg-base-300 rounded-box z-[1] w-52 p-2 shadow-2xl">
-                                <li>
-                                    <input
-                                        type="radio"
-                                        name="theme-dropdown"
-                                        className="theme-controller btn btn-sm btn-block btn-ghost justify-start text-slate-950	"
-                                        aria-label="پیش فرض"
-                                        value="cupcake" />
-                                </li>
-                                <li>
-                                    <input
-                                        type="radio"
-                                        name="theme-dropdown"
-                                        className="theme-controller btn btn-sm btn-block btn-ghost justify-start text-slate-950	"
-                                        aria-label="مشکی"
-                                        value="dark" />
-                                </li>
-                                <li>
-                                    <input
-                                        type="radio"
-                                        name="theme-dropdown"
-                                        className="theme-controller btn btn-sm btn-block btn-ghost justify-start text-slate-950	"
-                                        aria-label="روشن"
-                                        value="light" />
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Link href="/sign-up" className="m-1">
+                       <GradientBtn title="Sign Up for free"/>
+                    </Link>
                 </div>
             </div>
         </div>

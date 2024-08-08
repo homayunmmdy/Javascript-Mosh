@@ -4,6 +4,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from "next/script";
 import { WritePopUp } from "./components/elements";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 
 export const metadata = {
   title: `${SiteConfig.name} | ${SiteConfig.name_en}`,
@@ -34,16 +41,25 @@ const header = (
 
 export default function RootLayout({ children }) {
   return (
-    <html lang={SiteConfig.lang} dir={SiteConfig.dir} data-theme="cupcake">
-      {header}
-      <body>
-        <Navbar />
-        <main className="mt-[80px] bg-base-100">
-          {children}
-        </main>
-        <WritePopUp />
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+
+      <html lang={SiteConfig.lang} dir={SiteConfig.dir} data-theme="cupcake">
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+        {header}
+        <body>
+          <Navbar />
+          <main className="mt-[80px] bg-base-100">
+            {children}
+          </main>
+          <WritePopUp />
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
