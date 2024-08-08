@@ -6,10 +6,12 @@ const PostCard = ({ posts }) => {
       {posts.map(post => (
         <div className="card bg-base-100 shadow-xl mb-5 rounded-xl">
           <a href={`/Posts/${post._id}`} >
-          <figure className="px-5 pt-5">
+          <figure className="px-5 pt-5"> 
+
             <Image
               src={post.imgurl}
-              alt={post.title}
+              alt={post.imgAlt}
+              title={post.imgAlt}
               blurDataURL={post.imgurl}
               placeholder="blur"
               className="rounded-xl aspect-video bg-gray-600 object-cover"
@@ -20,8 +22,7 @@ const PostCard = ({ posts }) => {
             />
           </figure>
           <div className="card-body items-center text-center p-5">
-            <h2 className="card-title text-slate-950	">{post.title.slice(0, 100)}</h2>
-            <p className="text-slate-950	">{post.description.slice(0, 60)}</p>
+            <p className="text-slate-950	">{post.body}</p>
           </div>
           </a>
         </div>
