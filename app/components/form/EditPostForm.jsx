@@ -1,7 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import FormField from "./FormField";
 import { POST_API_URL } from "@/app/(admin)/util/apiConstants";
 
 const EditPostForm = ({ ticket }) => {
@@ -52,13 +51,32 @@ const EditPostForm = ({ ticket }) => {
   return (
     <div className="flex justify-center">
       {loading && <span className="absolute loading loading-ring loading-lg"></span>}
-      <form onSubmit={handleSubmit} method="post" className="flex flex-col gap-3 w-full md:w-1/2 mb-3">
-        <h3 className="text-center font-semibold text-2xl">{EDITMODE ? "Edit Post" : "New Post"}</h3>
-        <FormField id="imgurl" name="imgurl" label="Image Link" value={formData.imgurl} onChange={handleChange} />
-        <FormField id="title" name="title" label="Title" value={formData.title} onChange={handleChange} required />
-        <FormField id="description" name="description" type="textarea" label="Lead" value={formData.description} onChange={handleChange} />
-        <FormField id="body" name="body" type="textarea" label="Body" value={formData.body} onChange={handleChange} required />
+      <form onSubmit={handleSubmit} method="post" className=" w-full p-3 my-3">
+
+        <dialog id="my_modal_2" className="modal">
+          <div className="modal-box">
+            <h3 className="font-bold text-lg">Enter Image URL</h3>
+            <input
+              id="imgurl" name="imgurl" label="Image Link" value={formData.imgurl} onChange={handleChange}
+              required
+              className="input input-bordered input-primary w-full"
+            />
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
+
+        <textarea
+          id="body" name="body" type="textarea" label="Body" value={formData.body} onChange={handleChange}
+          required
+          placeholder="Share your thoughts..."
+          className="w-full h-full border-none hover:border-none bg-inherit focus-visible:border-none"
+        />
+        <div className="flex justify-end items-center">
+          <button className="btn" onClick={() => document.getElementById('my_modal_2').showModal()}>open modal</button>
         <input type="submit" className="btn btn-active btn-primary" value={EDITMODE ? "Save" : "Post"} />
+        </div>
       </form>
     </div>
   );

@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
       {header}
       <body>
         <Navbar />
-        <main className="mt-[76px] bg-base-100">
+        <main className="mt-[80px] bg-base-100">
           {children}
         </main>
         <WritePopUp />
