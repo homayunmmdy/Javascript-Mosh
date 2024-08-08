@@ -8,7 +8,7 @@ const useSinglePost = () => {
     const pathname = usePathname();
     const id = pathname.slice(7);
     const [post, setPost] = useState();
-    const apiClient = new APIClient(`${POST_API_URL}`);
+    const apiClient = new APIClient(POST_API_URL);
 
     useEffect(() => {
         const fetchPost = async () => {
