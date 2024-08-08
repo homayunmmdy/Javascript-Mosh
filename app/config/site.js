@@ -15,8 +15,8 @@ const SiteConfig = {
     },
     {
       id: 2,
-      name: "آرشیو",
-      link: "/archive",
+      name: "Profile",
+      link: "/profile",
     },
     {
       id: 3,
