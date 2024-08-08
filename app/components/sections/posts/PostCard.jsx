@@ -1,9 +1,10 @@
 import Image from "next/image";
 
-const PostCard = ({ post }) => {
+const PostCard = ({ posts }) => {
     return (
       <>
-        <div className="card  bg-base-100 shadow-xl md:hover:scale-105 rounded-xl transition-transform ease-in-out duration-500">
+      {posts.map(post => (
+        <div className="card bg-base-100 shadow-xl mb-5 rounded-xl">
           <a href={`/Posts/${post._id}`} >
           <figure className="px-5 pt-5">
             <Image
@@ -24,6 +25,7 @@ const PostCard = ({ post }) => {
           </div>
           </a>
         </div>
+      ))}
       </>
     );
   };

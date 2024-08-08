@@ -1,18 +1,10 @@
 "use client"
-import { POST_API_URL } from '@/app/(admin)/util/apiConstants'
-import useGetSection from '@/app/hooks/useGetSection'
-import PostCard from './PostCard'
-import Heading from '../../elements/Heading'
-import PostsSkeleton from './PostsSkeleton'
 import { useState } from 'react'
+import PostCard from './PostCard'
 
-const PostsSec = ({ title, secid }) => {
-    const { data, loading } = useGetSection(POST_API_URL, -4, secid);
+const PostsSec = ({ data }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    if (loading) {
-        return <PostsSkeleton />
-    }
 
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex === 0 ? data.length - 1 : prevIndex - 1));
@@ -22,18 +14,18 @@ const PostsSec = ({ title, secid }) => {
         setCurrentIndex((prevIndex) => (prevIndex === data.length - 1 ? 0 : prevIndex + 1));
     };
 
+const posts = data.data
     return (
         <>
-            <Heading title={title} />
             <div className="mx-auto py-6">
                 <div className="hidden md:grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 gap-5">
-                    {data?.map(post => (
+                    {posts?.map(post => (
                         <PostCard key={post._id} post={post} />
                     ))}
                 </div>
                 <div className="relative block md:hidden">
                     <div className="flex overflow-x-auto snap-x snap-mandatory">
-                        {data?.map((post, index) => (
+                        {posts?.map((post, index) => (
                             <div
                                 key={post._id}
                                 className={`snap-center ${index === currentIndex ? 'block' : 'hidden'}`}>
