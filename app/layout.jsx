@@ -3,6 +3,7 @@ import SiteConfig from "@/app/config/site"
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from "next/script";
+import { WritePopUp } from "./components/elements";
 
 export const metadata = {
   title: `${SiteConfig.name} | ${SiteConfig.name_en}`,
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <main className="mt-[76px] bg-base-100">
           {children}
         </main>
+        <WritePopUp />
         <Footer />
       </body>
     </html>
