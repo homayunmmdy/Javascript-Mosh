@@ -1,10 +1,10 @@
 "use client";
+import { POST_API_URL } from "@/app/(admin)/util/apiConstants";
+import Loading from "@/app/loading";
+import { SignIn, useUser } from "@clerk/clerk-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { POST_API_URL } from "@/app/(admin)/util/apiConstants";
 import { FaRegImage } from "react-icons/fa6";
-import { SignIn, useUser } from "@clerk/clerk-react";
-import Loading from "@/app/loading";
 
 const EditPostForm = ({ ticket }) => {
   const { user } = useUser()
@@ -60,7 +60,17 @@ const EditPostForm = ({ ticket }) => {
       {loading && <Loading />}
       <form onSubmit={handleSubmit} method="post" className=" w-full p-3 my-3">
 
-        <dialog id="my_modal_2" className="modal">
+
+
+        <textarea
+          id="body" name="body" type="textarea" label="Body" value={formData.body} onChange={handleChange}
+          required
+          rows={10}
+          cols={33}
+          placeholder="Share your thoughts..."
+          className="w-full h-full p-2 border-none hover:border-none bg-inherit focus-visible:border-none"
+        />
+        <dialog id="imgModel" className="modal">
           <div className="modal-box">
             <h3 className="font-bold text-lg">Enter Image URL</h3>
             <img
@@ -85,17 +95,8 @@ const EditPostForm = ({ ticket }) => {
             <button>close</button>
           </form>
         </dialog>
-
-        <textarea
-          id="body" name="body" type="textarea" label="Body" value={formData.body} onChange={handleChange}
-          required
-          rows={10}
-          cols={33}
-          placeholder="Share your thoughts..."
-          className="w-full h-full p-2 border-none hover:border-none bg-inherit focus-visible:border-none"
-        />
         <div className="flex gap-2 justify-end items-center">
-          <button className="btn" onClick={() => document.getElementById('my_modal_2').showModal()}><FaRegImage size={24} /></button>
+          <button className="btn" onClick={() => document.getElementById('imgModel').showModal()}><FaRegImage size={24} /></button>
           <input type="submit" className="btn btn-active btn-info text-white" value={EDITMODE ? "Save" : "Post"} />
         </div>
       </form>
