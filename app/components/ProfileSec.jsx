@@ -1,6 +1,7 @@
 import React from 'react'
 import { currentUser } from "@clerk/nextjs/server";
 import { MdOutlineEmail } from 'react-icons/md';
+import Link from 'next/link';
 
 const ProfileSec = async () => {
     const user = await currentUser();
@@ -18,6 +19,7 @@ const ProfileSec = async () => {
                                     <MdOutlineEmail size={20} />
                                     {user?.emailAddresses}
                                 </div> */}
+                                <Link href="/user-profile"  className='btn btn-info text-white'>Advance Profile</Link>
                             </div>
                         </div>
                     </div>
