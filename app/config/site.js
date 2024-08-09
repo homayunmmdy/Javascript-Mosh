@@ -1,16 +1,15 @@
 const SiteConfig = {
-  name: "آخرین هوش مصنوعی",
-  name_en: "Latestai",
-  description: "آخرین هوش مصنوعی:‌به دنیای هوش مصنوعی قدرتمند خوش آمدید",
+  name: "myMedia",
+  description: "Welcom the myMedia your suppper platform social media",
   lang: "en",
   dir: "ltr",
-  keywords: "هوش مصنوعی , ai, آخرین هوش مصنوعی ,  magnitify , آخرین",
+  keywords:
+    "social media , supper application,  platform , homayunmmdy , social",
   robots: "index , follow",
-  authors: "تیم آخرین هوش مصنوعی",
   nav: [
     {
       id: 1,
-      name: "خانه",
+      name: "Home",
       link: "/",
     },
     {
@@ -22,11 +21,6 @@ const SiteConfig = {
       id: 3,
       name: "Search",
       link: "/search",
-    },
-    {
-      id: 4,
-      name: "تماس با ما",
-      link: "/contacts",
     },
   ],
 };
