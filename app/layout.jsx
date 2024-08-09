@@ -1,16 +1,17 @@
-import "./globals.css";
-import SiteConfig from "@/app/config/site"
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Script from "next/script";
-import { WritePopUp } from "./components/elements";
+import SiteConfig from "@/app/config/site";
 import {
   ClerkProvider,
   SignInButton,
   SignedIn,
   SignedOut,
   UserButton
-} from '@clerk/nextjs'
+} from '@clerk/nextjs';
+import Script from "next/script";
+import { Suspense } from "react";
+import { WritePopUp } from "./components/elements";
+import Navbar from "./components/Navbar";
+import "./globals.css";
+import Loading from "./loading";
 
 export const metadata = {
   title: `${SiteConfig.name} | ${SiteConfig.name_en}`,
@@ -42,7 +43,6 @@ const header = (
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-
       <html lang={SiteConfig.lang} dir={SiteConfig.dir} data-theme="cupcake">
         <SignedOut>
           <SignInButton />
@@ -54,10 +54,11 @@ export default function RootLayout({ children }) {
         <body>
           <Navbar />
           <main className="mt-[80px] bg-base-100">
-            {children}
+            <Suspense fallback={<Loading />}>
+              {children}
+            </Suspense>
           </main>
           <WritePopUp />
-          <Footer />
         </body>
       </html>
     </ClerkProvider>
