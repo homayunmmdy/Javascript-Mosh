@@ -16,12 +16,10 @@ const PostCard = ({ posts }) => {
           <a href={`/Posts/${post._id}`} >
             {post.imgurl &&
               <figure className="px-5 pt-5">
-                <Image
+                <img
                   src={post.imgurl}
                   alt={post.imgAlt}
-                  title={post.imgAlt}
-                  blurDataURL={post.imgurl}
-                  placeholder="blur"
+                  title={post.imgAlt}  
                   className="rounded-xl aspect-video bg-gray-600 object-cover"
                   width={640}
                   height={360}

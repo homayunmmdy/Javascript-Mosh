@@ -7,13 +7,13 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   
     return (
       <nav className="flex justify-center items-center py-6">
-        <ul className="inline-flex -space-x-px">
+        <ul className="inline-flex -space-x-px gap-3">
           {pageNumbers.map(number => (
             <li key={number}>
               <button
                 onClick={() => paginate(number)}
-                className={`px-4 py-2 border ${currentPage === number ? "bg-indigo-700 text-white" : "bg-white text-indigo-700"
-                  } hover:bg-indigo-700 hover:text-white`}
+                className={`px-4 py-2 rounded-xl border ${currentPage === number ? "bg-blue-700 text-white" : "bg-white text-blue-700"
+                  } hover:bg-blue-700 hover:text-white`}
               >
                 {number}
               </button>

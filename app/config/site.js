@@ -20,8 +20,8 @@ const SiteConfig = {
     },
     {
       id: 3,
-      name: "سوالات متدوال",
-      link: "/FAQs",
+      name: "Search",
+      link: "/search",
     },
     {
       id: 4,
