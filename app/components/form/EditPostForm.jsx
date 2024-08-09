@@ -8,9 +8,7 @@ import { FaRegImage } from "react-icons/fa6";
 
 const EditPostForm = ({ ticket }) => {
   const { user } = useUser();
-  if (!user) {
-    return (<div className="flex justify-center py-5 "><SignIn /></div>)
-  }
+  
   const EDITMODE = ticket._id !== "new";
   const router = useRouter();
   const startingTicketData = {

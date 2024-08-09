@@ -12,6 +12,13 @@ import Navbar from "./components/Navbar";
 import "./globals.css";
 import Loading from "./loading";
 import ProfileSec from "./components/ProfileSec";
+import { currentUser } from "@clerk/nextjs/server";
+
+if (!user) {
+  return (<div className="flex justify-center py-5 "><SignIn /></div>)
+}
+
+const user = await currentUser();
 
 export const metadata = {
   title: SiteConfig.name,
@@ -50,8 +57,8 @@ export default function RootLayout({ children }) {
                 <div className="hidden md:block md:w-[25%]">
                   <div className="text-center">
 
-                  <h1 className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">{SiteConfig.name}</h1>
-                  <p>{SiteConfig.description}</p>
+                    <h1 className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">{SiteConfig.name}</h1>
+                    <p>{SiteConfig.description}</p>
                   </div>
                 </div>
               </div>
