@@ -1,10 +1,18 @@
 import Image from "next/image";
-
+import {BsThreeDotsVertical} from "react-icons/bs"
 const PostCard = ({ posts }) => {
   return (
     <>
       {posts.map(post => (
-        <div className="card bg-base-100 shadow-xl mb-5 rounded-xl">
+        <div className="card bg-base-100 shadow-xl mb-5 rounded-xl border border-gray-200">
+         <div className="border-b border-gray-200 flex justify-between items-center p-3">
+            <h2 className="font-bold">{post.username}</h2>
+         <div className="dropdown  dropdown-end">
+            <div tabindex="0" role="button" ><BsThreeDotsVertical className="text-black" size={18}/></div>
+            <ul tabindex="0" className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+              <li><button>Item 1</button></li> <li><button>Item 2</button></li></ul>
+          </div>
+         </div>
           <a href={`/Posts/${post._id}`} >
             {post.imgurl &&
               <figure className="px-5 pt-5">

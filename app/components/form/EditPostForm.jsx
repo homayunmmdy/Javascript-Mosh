@@ -4,6 +4,7 @@ import { useState } from "react";
 import { POST_API_URL } from "@/app/(admin)/util/apiConstants";
 import { FaRegImage } from "react-icons/fa6";
 import { SignIn, useUser } from "@clerk/clerk-react";
+import Loading from "@/app/loading";
 
 const EditPostForm = ({ ticket }) => {
   const { user } = useUser()
@@ -56,7 +57,7 @@ const EditPostForm = ({ ticket }) => {
 
   return (
     <div >
-      {loading && <span className="absolute loading loading-ring loading-lg"></span>}
+      {loading && <Loading />}
       <form onSubmit={handleSubmit} method="post" className=" w-full p-3 my-3">
 
         <dialog id="my_modal_2" className="modal">
@@ -70,7 +71,7 @@ const EditPostForm = ({ ticket }) => {
             />
             <input
               id="imgurl" name="imgurl" label="Image Link" value={formData.imgurl} onChange={handleChange}
-              
+
               placeholder="Enter Your Image URL Here"
               className="input input-bordered input-info w-full my-3"
             />

@@ -24,12 +24,11 @@ const Post = () => {
                 <div className="bg-white py-8">
                     <div className="container mx-auto justify-center px-4 flex flex-col md:flex-row">
                         <div className="w-full md:w-3/4 px-4">
-                            <Image
+                            <img
                                 className="w-full p-3 aspect-video rounded-3xl"
                                 src={post.imgurl}
-                                title={post.title}
-                                alt={post.title}
-                                blurDataURL={post.imgurl}
+                                title={post.imgAlt}
+                                alt={post.imgAlt}
                                 width={880}
                                 height={500}
                                 layout="responsive"
