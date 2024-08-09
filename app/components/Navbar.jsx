@@ -4,8 +4,12 @@ import SiteConfig from "@/app/config/site";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import GradientBtn from "./elements/GradientBtn";
+import { SignIn, useUser } from "@clerk/clerk-react";
+
 
 const Navbar = () => {
+    const { user } = useUser();
+
     const pathname = usePathname();
     const nav = SiteConfig.nav;
     return (
@@ -57,7 +61,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex navbar-end">
                     <Link href="/sign-up" className="m-1">
-                       <GradientBtn title="Sign Up for free"/>
+                        {!user ? <GradientBtn title="Sign Up for free"/> : <GradientBtn title="Profile"/>}
                     </Link>
                 </div>
             </div>

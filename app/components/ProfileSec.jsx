@@ -1,10 +1,13 @@
-import React from 'react'
+import { SignIn } from '@clerk/nextjs';
 import { currentUser } from "@clerk/nextjs/server";
-import { MdOutlineEmail } from 'react-icons/md';
 import Link from 'next/link';
 
 const ProfileSec = async () => {
     const user = await currentUser();
+
+if (!user) {
+    return (<div className="flex justify-center py-5 "><SignIn /></div>)
+}
     return (
         <>
             <div className="pt-2 px-2">
@@ -19,7 +22,7 @@ const ProfileSec = async () => {
                                     <MdOutlineEmail size={20} />
                                     {user?.emailAddresses}
                                 </div> */}
-                                <Link href="/user-profile"  className='btn btn-info text-white'>Advance Profile</Link>
+                                <Link href="/user-profile" className='btn btn-info text-white'>Advance Profile</Link>
                             </div>
                         </div>
                     </div>
