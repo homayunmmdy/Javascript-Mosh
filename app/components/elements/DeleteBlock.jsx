@@ -1,12 +1,8 @@
-'use client'
-import { useState, useEffect } from "react";
 import { MdDeleteOutline } from "react-icons/md";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 const DeleteBlock = ({ path, id }) => {
   const router = useRouter();
-
-
 
   const handleDelete = async () => {
     try {
@@ -25,17 +21,16 @@ const DeleteBlock = ({ path, id }) => {
 
   return (
     <>
-    <button onClick={() => document.getElementById('deleteModal').showModal()} className="flex justify-between">
-     <span>Delete the post</span>
-      <span ><MdDeleteOutline size={25}/></span>
-    </button>
+      <button onClick={() => document.getElementById('deleteModal').showModal()} className="flex justify-between">
+        <span>Delete the post</span>
+        <span ><MdDeleteOutline size={25} /></span>
+      </button>
       <dialog id="deleteModal" className="modal justify-center">
         <div className="modal-box text-center">
           <h3 className="font-bold text-lg">Delete post ?</h3>
           <p className="py-4">This can not be undone and it will be removed from your profile, the timeline of any accounts that follow you,and from search results.</p>
           <div className="modal-action justify-center">
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button className="btn mr-2">Cancel</button>
               <button
                 type="button"
