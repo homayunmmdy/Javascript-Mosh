@@ -1,12 +1,12 @@
-import {  handleGetSingleRequest } from "@/app/(admin)/util/apiUtil";
-import { NextResponse } from "next/server";
 import CashData from "@/app/(admin)/cash/CashData";
-import Post from "@/app/models/Post";
+import { PostModel } from "@/app/models";
+import RequestHandeler from "@/services/RequestHandeler";
+import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
   const { id } = params;
-  return handleGetSingleRequest(Post, id , CashData);
-
+  const handler = new RequestHandeler(PostModel, CashData);
+  return handler.Get(id);
 }
 
 export async function PUT(req, { params }) {
@@ -16,7 +16,7 @@ export async function PUT(req, { params }) {
     const body = await req.json();
     const ticketData = body.formData;
 
-    const updateTicketData = await Post.findByIdAndUpdate(id, {
+    const updateTicketData = await PostModel.findByIdAndUpdate(id, {
       ...ticketData,
     });
 
@@ -34,7 +34,7 @@ export async function DELETE(req, { params }) {
   try {
     const { id } = params;
 
-    await Post.findByIdAndDelete(id);
+    await PostModel.findByIdAndDelete(id);
     return NextResponse.json(
       { message: "پست مورد نظر با موفیقت حذف شد" },
       { status: 200 }
