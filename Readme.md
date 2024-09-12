@@ -30,3 +30,13 @@ let isApproved = true; //Boolean Literal
 let firstName; //undefined
 let selectedColor = null //clear value of variables
 ```
+
+## Dynamic type
+JavaScript is Dynamic type which is type checking takes place at runtime or execution time.
+
+```javascript 
+let name = "homayounn"
+name = 1
+```
+
+in this example we change the string into number and it's worked
