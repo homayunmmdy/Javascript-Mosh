@@ -1,5 +1,6 @@
-let selectedColors = ['red', 'blue'];
+// the name in the function is parameter
+function greet(name, lastName) {
+  console.log("Hello " + name + " " + lastName);
+}
 
-selectedColors[2] = null
-
-console.log(selectedColors.length)
+greet("Homayoun", 'Mohammadi'); //this argumen

@@ -75,3 +75,14 @@ selectedColors[2] = null
 
 console.log(selectedColors.length)
 ```
+
+## function 
+a set of statements that performs a task or calculates a value
+```javascript
+// the name in the function is parameter
+function greet(name, lastName) {
+  console.log("Hello " + name + " " + lastName);
+}
+
+greet("Homayoun", 'Mohammadi'); //this argumen
+```
