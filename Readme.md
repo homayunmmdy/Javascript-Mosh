@@ -40,3 +40,27 @@ name = 1
 ```
 
 in this example we change the string into number and it's worked
+
+## Reference data
+dynamic in nature don not have fixed size  include
+- object
+- array
+- function
+
+## Object
+a collection of properties,
+
+```javascript
+let person = {
+  name: "Homayoun",
+  age: 18,
+};
+
+// Do Notation
+person.name = 'John'
+
+// Bracket Notation
+person['name'] = 'Mary'
+
+console.log(person)
+```
