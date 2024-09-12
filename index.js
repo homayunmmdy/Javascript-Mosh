@@ -1,6 +1,14 @@
-// the name in the function is parameter
-function greet(name, lastName) {
-  console.log("Hello " + name + " " + lastName);
-}
+let x = 10;
+let y = 3;
 
-greet("Homayoun", 'Mohammadi'); //this argumen
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y);
+console.log(x ** y);
+
+// Increment(++)
+console.log(x++)
+// Dcrement(++)
+console.log(--x)
