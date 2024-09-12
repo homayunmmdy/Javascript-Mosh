@@ -1,14 +1,9 @@
 let x = 10;
-let y = 3;
 
-console.log(x + y);
-console.log(x - y);
-console.log(x * y);
-console.log(x / y);
-console.log(x % y);
-console.log(x ** y);
+x = x + 5;
+// here the short version of code on the top
+x += 5;
 
-// Increment(++)
-console.log(x++)
-// Dcrement(++)
-console.log(--x)
+x = x * 3;
+// here the short version of code on the top
+x *= 3;
