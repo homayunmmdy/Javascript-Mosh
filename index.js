@@ -1,11 +1,7 @@
-let x = 10;
+// Strict Equality (Type and value)
+console.log(1 === 1)
+console.log("1" === 1)
 
-//Relational Operators
-console.log(x > 0);
-console.log(x >= 10);
-console.log(x <  10);
-console.log(x <= 10);
-
-// Equality
-console.log(x === 10)
-console.log(x !== 10)
+// Lose Equality (value)
+console.log(1 === 1)
+console.log("1" === 1)
