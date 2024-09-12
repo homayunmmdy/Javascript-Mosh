@@ -122,3 +122,19 @@ x = x * 3;
 // here the short version of code on the top
 x *= 3;
 ```
+
+## comparison operators
+
+```javascript
+let x = 10;
+
+//Relational Operators
+console.log(x > 0);
+console.log(x >= 10);
+console.log(x <  10);
+console.log(x <= 10);
+
+// Equality
+console.log(x === 10)
+console.log(x !== 10)
+```
