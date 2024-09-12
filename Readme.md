@@ -64,3 +64,14 @@ person['name'] = 'Mary'
 
 console.log(person)
 ```
+
+## Array
+global object used to store data.
+
+```javascript
+let selectedColors = ['red', 'blue'];
+
+selectedColors[2] = null
+
+console.log(selectedColors.length)
+```

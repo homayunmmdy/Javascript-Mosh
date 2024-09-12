@@ -1,12 +1,5 @@
-let person = {
-  name: "Homayoun",
-  age: 18,
-};
+let selectedColors = ['red', 'blue'];
 
-// Do Notation
-person.name = 'John'
+selectedColors[2] = null
 
-// Bracket Notation
-person['name'] = 'Mary'
-
-console.log(person)
+console.log(selectedColors.length)
