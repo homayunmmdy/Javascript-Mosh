@@ -2,7 +2,10 @@
 
 ## Variables
 
-we use a variable to store data temporarily
+we use a variable to store data temporarily.
+in es6 we have two way to decalre a variable one with 
+<b>let : </b> when the value can change in future
+<b>const : </b> when the value must not be changed
 
 ### variable names
 
