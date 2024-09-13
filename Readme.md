@@ -294,7 +294,7 @@ for (let index in colors) {
 }
 ```
 
-## for in
+## for of
 Loops the values of any iterable	
 ```javascript
 const colors = ['red', 'green','blue'];
@@ -389,4 +389,19 @@ function showNumber(limit) {
 }
 
 showNumber(10)
+```
+
+### Count Truthy 
+function get array and chek the truthy elements and return the length of them
+
+```javascript
+let array = [1, 2, 3, 0, undefined, null];
+
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array) if (value) count++;
+  return count;
+}
 ```

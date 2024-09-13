@@ -1,8 +1,9 @@
-function showNumber(limit) {
-  for (let i = 0; i <= limit; i++) {
-    const message = i % 2 === 0 ? "EVEN" : "ODD";
-    console.log(i, message);
-  }
-}
+let array = [1, 2, 3, 0, undefined, null];
 
-showNumber(10)
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+  let count = 0;
+  for (let value of array) if (value) count++;
+  return count;
+}
