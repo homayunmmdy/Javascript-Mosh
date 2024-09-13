@@ -213,6 +213,7 @@ false || 1 || 2;
 # control flow
 
 ## if and esle
+
 ```javascript
 // Hour
 // if is between 6am to 12pm : Good Morning1
@@ -220,16 +221,17 @@ false || 1 || 2;
 // otherwise : Good evening!
 
 let hour = 19;
-if(hour >= 6 &&  hour < 12) {
-    console.log("Good Morning!");
-}else if (hour >= 12 && hour < 18) {
-    console.log("Good Afternoon!")
-}else {
-    console.log('Good Evening!')
+if (hour >= 6 && hour < 12) {
+  console.log("Good Morning!");
+} else if (hour >= 12 && hour < 18) {
+  console.log("Good Afternoon!");
+} else {
+  console.log("Good Evening!");
 }
 ```
 
-## switch and case 
+## switch and case
+
 ```javascript
 let role = "moderator";
 
@@ -246,65 +248,76 @@ switch (role) {
 ```
 
 # Loops
+
 ## For
+
 ```javascript
-for(let i = 0;i < 5;i++) {
-    console.log("hi")
+for (let i = 0; i < 5; i++) {
+  console.log("hi");
 }
 ```
 
 ## while loop
+
 ```javascript
 let i = 0;
-while(i <= 5) {
-    console.log("Hello");
-    i++
+while (i <= 5) {
+  console.log("Hello");
+  i++;
 }
 ```
 
 ## do while loop
+
 same as while but it will render once even the condition is failed
+
 ```javascript
-let i  = 9;
+let i = 9;
 do {
-    console.log("Hello");
-    i++;
-}while (i <= 5)
+  console.log("Hello");
+  i++;
+} while (i <= 5);
 ```
 
 ## for in
+
 Loops the properties of an object
 
 ```javascript
 const person = {
-    name : "Homayoun",
-    age: 18
-}
+  name: "Homayoun",
+  age: 18,
+};
 
 for (let key in person) {
-    console.log(key, person[key])
+  console.log(key, person[key]);
 }
 ```
+
 example in the array we have new for of specificy for arry too
+
 ```javascript
-const colors = ['red', 'green','blue'];
+const colors = ["red", "green", "blue"];
 
 for (let index in colors) {
-    console.log(index , colors[index])
+  console.log(index, colors[index]);
 }
 ```
 
 ## for of
-Loops the values of any iterable	
-```javascript
-const colors = ['red', 'green','blue'];
 
-for(let color of colors) {
-    console.log(color)
+Loops the values of any iterable
+
+```javascript
+const colors = ["red", "green", "blue"];
+
+for (let color of colors) {
+  console.log(color);
 }
 ```
 
 ## break and continue keywords
+
 ```javascript
 for (let i = 0; i < 10; i++) {
   if (i === 3) {
@@ -314,12 +327,14 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
-### Exercise 
-write function that takes two numbers and return the 
+### Exercise
+
+write function that takes two numbers and return the
 maximum of the two
+
 ```javascript
 function max(a, b) {
-  return (a > b) ? a : b;
+  return a > b ? a : b;
 }
 
 let number = max(59, 10);
@@ -327,6 +342,7 @@ console.log(number);
 ```
 
 ### isLandscape example
+
 return true if is landscape which mean width is bigger than the heihgts otherwise return false
 
 ```javascript
@@ -334,9 +350,11 @@ function isLandscape(width, height) {
   return width > height;
 }
 
-console.log(isLandscape(500, 400))
+console.log(isLandscape(500, 400));
 ```
+
 ### Fizz buzz
+
 ```javascript
 // Divisible by 3 => Fizz
 // Divisible by 5 => Buzz
@@ -356,6 +374,7 @@ function fizzBuzz(input) {
 ```
 
 ### check speed example
+
 ```javascript
 // Speed Limit = 70
 // 5 -> 1 point
@@ -380,6 +399,7 @@ function checkSpeed(speed) {
 ```
 
 ### list of the numbers example
+
 ```javascript
 function showNumber(limit) {
   for (let i = 0; i <= limit; i++) {
@@ -388,10 +408,11 @@ function showNumber(limit) {
   }
 }
 
-showNumber(10)
+showNumber(10);
 ```
 
-### Count Truthy 
+### Count Truthy
+
 function get array and chek the truthy elements and return the length of them
 
 ```javascript
@@ -403,5 +424,26 @@ function countTruthy(array) {
   let count = 0;
   for (let value of array) if (value) count++;
   return count;
+}
+```
+
+### showProperties
+
+this function get object and just return the properties that had
+string value
+
+```javascript
+const movie = {
+  title: "a",
+  releaseYear: 2018,
+  rating: 4.5,
+  director: "b",
+};
+
+showProperties(movie);
+
+function showProperties(obj) {
+  for (let key in obj)
+    if (typeof obj[key] === "string") console.log(key, obj[key]);
 }
 ```
