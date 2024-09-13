@@ -252,3 +252,12 @@ for(let i = 0;i < 5;i++) {
     console.log("hi")
 }
 ```
+
+## while loop
+```javascript
+let i = 0;
+while(i <= 5) {
+    console.log("Hello");
+    i++
+}
+```
