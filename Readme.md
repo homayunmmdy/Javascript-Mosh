@@ -261,3 +261,13 @@ while(i <= 5) {
     i++
 }
 ```
+
+## do while loop
+same as while but it will render once even the condition is failed
+```javascript
+let i  = 9;
+do {
+    console.log("Hello");
+    i++;
+}while (i <= 5)
+```
