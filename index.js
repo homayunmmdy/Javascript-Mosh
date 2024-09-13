@@ -1,6 +1,6 @@
-for (let i = 0; i < 10; i++) {
-  if (i === 3) {
-    break;
-  }
-  console.log("The number is " + i);
+function max(a, b) {
+  return (a > b) ? a : b;
 }
+
+let number = max(59, 10);
+console.log(number);

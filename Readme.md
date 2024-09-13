@@ -313,3 +313,15 @@ for (let i = 0; i < 10; i++) {
   console.log("The number is " + i);
 }
 ```
+
+### Exercise 
+write function that takes two numbers and return the 
+maximum of the two
+```javascript
+function max(a, b) {
+  return (a > b) ? a : b;
+}
+
+let number = max(59, 10);
+console.log(number);
+```
