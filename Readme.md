@@ -449,6 +449,7 @@ function showProperties(obj) {
 ```
 
 ### sum
+
 ```javascript
 console.log(sum(10));
 
@@ -489,5 +490,21 @@ function calculateAverage(array) {
   let sum = 0;
   for (let mark of array) sum += mark;
   return sum / array.length;
+}
+```
+
+### populare showStart
+
+```javascript
+showStart(12);
+
+function showStart(rows) {
+  for (let row = 0; row <= rows; row++) {
+    let pattern = "";
+    for (let i = 0; i < row; i++) {
+      pattern += "*";
+    }
+    console.log(pattern);
+  }
 }
 ```
