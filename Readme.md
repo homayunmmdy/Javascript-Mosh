@@ -325,3 +325,14 @@ function max(a, b) {
 let number = max(59, 10);
 console.log(number);
 ```
+
+### isLandscape example
+return true if is landscape which mean width is bigger than the heihgts otherwise return false
+
+```javascript
+function isLandscape(width, height) {
+  return width > height;
+}
+
+console.log(isLandscape(500, 400))
+```

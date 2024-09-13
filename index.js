@@ -1,6 +1,5 @@
-function max(a, b) {
-  return (a > b) ? a : b;
+function isLandscape(width, height) {
+  return width > height;
 }
 
-let number = max(59, 10);
-console.log(number);
+console.log(isLandscape(500, 400))
