@@ -293,3 +293,13 @@ for (let index in colors) {
     console.log(index , colors[index])
 }
 ```
+
+## for in
+Loops the values of any iterable	
+```javascript
+const colors = ['red', 'green','blue'];
+
+for(let color of colors) {
+    console.log(color)
+}
+```
