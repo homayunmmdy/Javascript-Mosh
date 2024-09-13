@@ -525,3 +525,22 @@ function isPrime(number) {
   return true;
 }
 ```
+
+# Objects in details
+object is collections of keys and values are higly related
+we call variables inside object properties 
+and functions inside of the object we called method
+```javascript
+const circle = {
+  radius: 1,
+  location: {
+    x: 1,
+    y: 1,
+  },
+  isVisible: true,
+  draw: function () { 
+    console.log("draw");
+  },
+};
+
+```
