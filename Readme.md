@@ -303,3 +303,13 @@ for(let color of colors) {
     console.log(color)
 }
 ```
+
+## break and continue keywords
+```javascript
+for (let i = 0; i < 10; i++) {
+  if (i === 3) {
+    break;
+  }
+  console.log("The number is " + i);
+}
+```
