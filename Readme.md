@@ -271,3 +271,25 @@ do {
     i++;
 }while (i <= 5)
 ```
+
+## for in
+Loops the properties of an object
+
+```javascript
+const person = {
+    name : "Homayoun",
+    age: 18
+}
+
+for (let key in person) {
+    console.log(key, person[key])
+}
+```
+example in the array we have new for of specificy for arry too
+```javascript
+const colors = ['red', 'green','blue'];
+
+for (let index in colors) {
+    console.log(index , colors[index])
+}
+```
