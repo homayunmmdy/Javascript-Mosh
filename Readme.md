@@ -244,3 +244,11 @@ switch (role) {
     console.log("unkown User");
 }
 ```
+
+# Loops
+## For
+```javascript
+for(let i = 0;i < 5;i++) {
+    console.log("hi")
+}
+```
