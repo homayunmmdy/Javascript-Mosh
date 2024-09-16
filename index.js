@@ -1,5 +1,12 @@
-const now = new Date();
+const address = {
+    street : "Wall Street",
+    city : "New York City",
+    zipCode : 10001
+}
 
-const future = now.setFullYear(2026);
+function ShowAddress(address) {
+    for (key in address)
+        console.log(key, address[key])
+}
 
-console.log(future)
+ShowAddress(address)

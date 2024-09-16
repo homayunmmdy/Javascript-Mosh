@@ -757,3 +757,21 @@ const future = now.setFullYear(2026);
 
 console.log(future)
 ```
+
+### Exercise 1- Address Object
+
+```javascript
+const address = {
+    street : "Wall Street",
+    city : "New York City",
+    zipCode : 10001
+}
+
+function ShowAddress(address) {
+    for (key in address)
+        console.log(key, address[key])
+}
+
+ShowAddress(address)
+```
+
