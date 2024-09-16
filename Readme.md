@@ -551,6 +551,7 @@ const circle = {
 ## factory function
 
 function that returns an object. It's called a factory function because it creates and returns a new object each time it's called, just like a factory creates and produces new products.
+
 ```javascript
 // Factory Funtion
 function creaateCircle(radius) {
@@ -567,23 +568,26 @@ const circle1 = creaateCircle(1);
 console.log(circle1);
 ```
 
-## Constructor Function 
+## Constructor Function
+
 a special type of function in programming that is used to create objects
 
 ```javascript
 function Circle(radius) {
   this.radius = radius;
-  this.draw = function() {
-    console.log("draw")
-  }
-} 
+  this.draw = function () {
+    console.log("draw");
+  };
+}
 
 const circle = new Circle(1);
-console.log(circle)
+console.log(circle);
 ```
 
 ## dynmaic object
+
 objects are dynamic and you can add or remove property form it.
+
 ```javascript
 const circle = {
   radius: 1,
@@ -596,15 +600,17 @@ circle.draw = function () {};
 delete circle.location;
 
 console.log(circle);
-
 ```
 
 ## constructor property
-every object has constructor property and that refrences the 
-function was used to create that object 
+
+every object has constructor property and that refrences the
+function was used to create that object
 
 ## Function are objects
+
 in javascript function are objects
+
 ```javascript
 function Circle(radius) {
   this.radius = radius;
@@ -620,6 +626,48 @@ Circle.call({}, 1);
 //also we had apply same as call but instead of passing each of
 // them explicity we pass theme in array like this
 Circle.apply({}, [1, 2, 3, 4]);
-
-
 ```
+
+# Value Types VS Reference Types
+
+value types are
+
+- number
+- string
+- boolean
+- symbol
+- undefined
+- null
+
+reference
+
+- object
+- function
+- array
+
+in the example blew the y is store the copy of the x and next line when the x is change the value of the y won't change because it saved
+the copy of the x
+
+```javascript
+let x = 10;
+let y = x;
+
+x = 20;
+
+console.log(x);
+console.log(y);
+```
+
+in this example blew we create object that object is not stored in the x variable it's stored somewhere in memeroy and address of that stored in the variable and when we change the object value of x it's renfracer to value the store some where and update that value because of that the value of y is changed too
+
+```javascript
+let x = { value: 10 };
+let y = x;
+
+x.value = 20;
+
+console.log(x);
+console.log(y);
+```
+<b><mark>Primitives </mark> are copied by their <mark>valuee</mark></b>
+<b><mark>Objects </mark> are copied by their <mark>reference</mark></b>
