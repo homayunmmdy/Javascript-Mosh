@@ -1,12 +1,17 @@
-const address = {
-    street : "Wall Street",
-    city : "New York City",
-    zipCode : 10001
+const address1 = addressFF("Wall Street", "NYC", 1001);
+const address2 = new AddressCF("Wall Street", "NYC", 1001);
+
+
+function addressFF(street, city , zipCode) {
+  return {
+    street,
+    city,
+    zipCode
+  };
 }
 
-function ShowAddress(address) {
-    for (key in address)
-        console.log(key, address[key])
+function AddressCF(street, city , zipCode) {
+  this.street = street,
+  this.city = city,
+  this.zipCode = zipCode
 }
-
-ShowAddress(address)
