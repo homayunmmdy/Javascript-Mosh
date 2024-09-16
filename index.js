@@ -1,13 +1,12 @@
-const Post = {
-  title: "Biggest Mistake in Tech Industry",
-  body: "This is the sample text for the body of this great blog",
-  auth: "Homayoun",
-  views: 2000,
-  comments: [
-    { name: "John", body: "Great Article" },
-    { name: "Alex", body: "Perfect Article" },
-  ],
-  isLive: true
-};
+let post = new DraftPost("a", "b", "c");
 
-console.log(Post)
+console.log(post)
+
+function DraftPost(title, body, author) {
+  this.title = title;
+  this.body = body;
+  this.author = author;
+  this.view = 0;
+  this.comments = [];
+  this.isLive = false;
+}
