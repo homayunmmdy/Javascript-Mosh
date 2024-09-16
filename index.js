@@ -1,5 +1,5 @@
-const name = 'Homayayoun'
-const message = `Hi ${name}
-How are you`;
+const now = new Date();
 
-console.log(message)
+const future = now.setFullYear(2026);
+
+console.log(future)

@@ -746,3 +746,14 @@ How are you`;
 
 console.log(message)
 ```
+
+## Date Object
+represent a single moment in time in a platform-independent format
+
+```javascript
+const now = new Date();
+
+const future = now.setFullYear(2026);
+
+console.log(future)
+```
