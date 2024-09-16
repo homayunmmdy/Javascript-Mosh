@@ -723,4 +723,16 @@ console.log(another3);
 ```
 
 ## Math Object
+
 object that provides mathematical functions and constants
+
+## String Object
+
+used to represent and manipulate a sequence of characters
+
+```javascript
+const message = "hi homayoun";
+
+console.log(message.toUpperCase());
+console.log(message.length);
+```
