@@ -566,3 +566,18 @@ function creaateCircle(radius) {
 const circle1 = creaateCircle(1);
 console.log(circle1);
 ```
+
+## Constructor Function 
+a special type of function in programming that is used to create objects
+
+```javascript
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function() {
+    console.log("draw")
+  }
+} 
+
+const circle = new Circle(1);
+console.log(circle)
+```
