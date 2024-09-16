@@ -1,12 +1,5 @@
-let post = new DraftPost("a", "b", "c");
-
-console.log(post)
-
-function DraftPost(title, body, author) {
-  this.title = title;
-  this.body = body;
-  this.author = author;
-  this.view = 0;
-  this.comments = [];
-  this.isLive = false;
-}
+let priceRanges = [
+  { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
+  { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
+  { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
+];
