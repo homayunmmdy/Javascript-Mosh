@@ -739,15 +739,16 @@ console.log(message.length);
 
 ## template literal
 
-```javascript 
-const name = 'Homayayoun'
+```javascript
+const name = "Homayayoun";
 const message = `Hi ${name}
 How are you`;
 
-console.log(message)
+console.log(message);
 ```
 
 ## Date Object
+
 represent a single moment in time in a platform-independent format
 
 ```javascript
@@ -755,45 +756,68 @@ const now = new Date();
 
 const future = now.setFullYear(2026);
 
-console.log(future)
+console.log(future);
 ```
 
 ### Exercise 1- Address Object
 
 ```javascript
 const address = {
-    street : "Wall Street",
-    city : "New York City",
-    zipCode : 10001
-}
+  street: "Wall Street",
+  city: "New York City",
+  zipCode: 10001,
+};
 
 function ShowAddress(address) {
-    for (key in address)
-        console.log(key, address[key])
+  for (key in address) console.log(key, address[key]);
 }
 
-ShowAddress(address)
+ShowAddress(address);
 ```
 
-
-
 ## Exercise- Factory and Constructor Function
+
 ```javascript
 const address1 = addressFF("Wall Street", "NYC", 1001);
 const address2 = new AddressCF("Wall Street", "NYC", 1001);
 
-
-function addressFF(street, city , zipCode) {
+function addressFF(street, city, zipCode) {
   return {
     street,
     city,
-    zipCode
+    zipCode,
   };
 }
 
-function AddressCF(street, city , zipCode) {
-  this.street = street,
-  this.city = city,
-  this.zipCode = zipCode
+function AddressCF(street, city, zipCode) {
+  (this.street = street), (this.city = city), (this.zipCode = zipCode);
+}
+```
+
+### Exercise 3- Object Equality
+
+```javascript
+const address1 = new Address("Wall Street", "NYC", 1001);
+const address2 = new Address("Wall Street", "NYC", 1001);
+const address3 = address1;
+
+console.log("are Equal", areEqual(address1, address2));
+console.log("are Same", areSame(address1, address2));
+console.log("are Same2", areSame(address1, address3));
+
+function Address(street, city, zipCode) {
+  (this.street = street), (this.city = city), (this.zipCode = zipCode);
+}
+
+function areEqual(address1, address2) {
+  return (
+    address1.street === address2.street &&
+    address1.city === address2.city &&
+    address1.zipCode === address2.zipCode
+  );
+}
+
+function areSame(address1, address2) {
+  return address1 === address2;
 }
 ```
