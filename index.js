@@ -1,4 +1,5 @@
-const message = 'hi homayoun';
+const name = 'Homayayoun'
+const message = `Hi ${name}
+How are you`;
 
-console.log(message.toUpperCase())
-console.log(message.length)
+console.log(message)
