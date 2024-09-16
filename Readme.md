@@ -671,3 +671,19 @@ console.log(y);
 ```
 <b><mark>Primitives </mark> are copied by their <mark>valuee</mark></b>
 <b><mark>Objects </mark> are copied by their <mark>reference</mark></b>
+
+## Enumerating Properties of an Object
+object are not iterable so we can not use for of for object we use 
+for in for objects
+also some hidden way to iterate over the objects like this
+```javascript
+for (let key of Object.keys(circle)) console.log(key);
+
+for (let key of Object.entries(circle)) console.log(key);
+```
+
+also for checking the property is exist in the object or not we can use in
+
+```javascript 
+if('radius' in circle) console.log("yes")
+```
