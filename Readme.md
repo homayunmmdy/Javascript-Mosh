@@ -721,3 +721,6 @@ const another3 = { ...circle };
 
 console.log(another3);
 ```
+
+## Math Object
+object that provides mathematical functions and constants
