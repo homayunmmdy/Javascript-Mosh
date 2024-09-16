@@ -527,9 +527,13 @@ function isPrime(number) {
 ```
 
 # Objects in details
+
+## Object Literal syantax
+
 object is collections of keys and values are higly related
-we call variables inside object properties 
+we call variables inside object properties
 and functions inside of the object we called method
+
 ```javascript
 const circle = {
   radius: 1,
@@ -538,9 +542,27 @@ const circle = {
     y: 1,
   },
   isVisible: true,
-  draw: function () { 
+  draw: function () {
     console.log("draw");
   },
 };
+```
 
+## factory function
+
+function that returns an object. It's called a factory function because it creates and returns a new object each time it's called, just like a factory creates and produces new products.
+```javascript
+// Factory Funtion
+function creaateCircle(radius) {
+  return {
+    radius,
+
+    draw() {
+      console.log("draw");
+    },
+  };
+}
+
+const circle1 = creaateCircle(1);
+console.log(circle1);
 ```
