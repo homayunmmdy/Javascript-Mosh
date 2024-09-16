@@ -581,3 +581,20 @@ function Circle(radius) {
 const circle = new Circle(1);
 console.log(circle)
 ```
+
+## dynmaic object
+objects are dynamic and you can add or remove property form it.
+```javascript
+const circle = {
+  radius: 1,
+};
+
+circle.color = "yellow";
+circle.location = "x";
+circle.draw = function () {};
+
+delete circle.location;
+
+console.log(circle);
+
+```
