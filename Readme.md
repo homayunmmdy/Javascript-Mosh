@@ -598,3 +598,7 @@ delete circle.location;
 console.log(circle);
 
 ```
+
+## constructor property
+every object has constructor property and that refrences the 
+function was used to create that object 
