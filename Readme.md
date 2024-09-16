@@ -867,3 +867,20 @@ let priceRanges = [
 ];
 
 ```
+
+# Array
+
+## Adding Element 
+when we declare variable object or anything with const we can't reasign to something else but we can modified them like add or remove something inside of it.
+
+```javascript
+const numbers = [3, 4];
+// End
+numbers.push(5, 6);
+// Beginning
+numbers.unshift(1, 2);
+// Middle
+numbers.splice(2,0,"a" , "b")
+
+console.log(numbers);
+```
