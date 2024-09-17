@@ -911,3 +911,17 @@ const courseIndex = courses.findIndex(function(course) {
 console.log(course)
 console.log(courseIndex)
 ```
+
+## Arrow function
+short form of the function that dose not have own this and inherit from the parent
+
+```javascript
+const courses = [
+  { id: 1, name: "a" },
+  { id: 2, name: "b" },
+  { id: 3, name: "c" },
+];
+
+const course = courses.find(course => course.name === "a");
+
+```

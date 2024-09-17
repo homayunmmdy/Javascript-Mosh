@@ -4,12 +4,4 @@ const courses = [
   { id: 3, name: "c" },
 ];
 
-const course = courses.find(function(course) {
-    return course.name === 'a'
-})
-const courseIndex = courses.findIndex(function(course) {
-    return course.name === 'a'
-})
-
-console.log(course)
-console.log(courseIndex)
+const course = courses.find(course => course.name === "a");
