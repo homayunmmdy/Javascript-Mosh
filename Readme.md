@@ -834,10 +834,10 @@ const Post = {
     { name: "John", body: "Great Article" },
     { name: "Alex", body: "Perfect Article" },
   ],
-  isLive: true
+  isLive: true,
 };
 
-console.log(Post)
+console.log(Post);
 ```
 
 ### Exercise 5- Constructor Functions
@@ -845,7 +845,7 @@ console.log(Post)
 ```javascript
 let post = new DraftPost("a", "b", "c");
 
-console.log(post)
+console.log(post);
 
 function DraftPost(title, body, author) {
   this.title = title;
@@ -855,22 +855,22 @@ function DraftPost(title, body, author) {
   this.comments = [];
   this.isLive = false;
 }
-
 ```
 
 ### Exercise 6- Price Range Objects
+
 ```javascript
 let priceRanges = [
   { label: "$", tooltip: "Inexpensive", minPerPerson: 0, maxPerPerson: 10 },
   { label: "$$", tooltip: "Moderate", minPerPerson: 11, maxPerPerson: 20 },
   { label: "$$$", tooltip: "Expensive", minPerPerson: 21, maxPerPerson: 50 },
 ];
-
 ```
 
 # Array
 
-## Adding Element 
+## Adding Element
+
 when we declare variable object or anything with const we can't reasign to something else but we can modified them like add or remove something inside of it.
 
 ```javascript
@@ -880,20 +880,22 @@ numbers.push(5, 6);
 // Beginning
 numbers.unshift(1, 2);
 // Middle
-numbers.splice(2,0,"a" , "b")
+numbers.splice(2, 0, "a", "b");
 
 console.log(numbers);
 ```
 
 ## Finding Elements (Primitives)
+
 ```javascript
 const numbers = [1, 2, 3, 1, 4];
 
-console.log(numbers.indexOf(3))
+console.log(numbers.indexOf(3));
 console.log(numbers.lastIndexOf(1));
 ```
 
 ## Finding Elements (Reference Types)
+
 ```javascript
 const courses = [
   { id: 1, name: "a" },
@@ -901,18 +903,19 @@ const courses = [
   { id: 3, name: "c" },
 ];
 
-const course = courses.find(function(course) {
-    return course.name === 'a'
-})
-const courseIndex = courses.findIndex(function(course) {
-    return course.name === 'a'
-})
+const course = courses.find(function (course) {
+  return course.name === "a";
+});
+const courseIndex = courses.findIndex(function (course) {
+  return course.name === "a";
+});
 
-console.log(course)
-console.log(courseIndex)
+console.log(course);
+console.log(courseIndex);
 ```
 
 ## Arrow function
+
 short form of the function that dose not have own this and inherit from the parent
 
 ```javascript
@@ -922,6 +925,20 @@ const courses = [
   { id: 3, name: "c" },
 ];
 
-const course = courses.find(course => course.name === "a");
+const course = courses.find((course) => course.name === "a");
+```
 
+## Removing Element
+
+```javascript
+const numbers = [1, 2, 3, 4];
+
+// End
+console.log(numbers.pop()) // 4
+
+// Beginning
+console.log(numbers.shift()) // 1
+
+// Middle
+console.log(numbers.splice(1, 1)); // [3]
 ```
