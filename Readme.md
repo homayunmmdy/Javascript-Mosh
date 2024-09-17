@@ -892,3 +892,22 @@ const numbers = [1, 2, 3, 1, 4];
 console.log(numbers.indexOf(3))
 console.log(numbers.lastIndexOf(1));
 ```
+
+## Finding Elements (Reference Types)
+```javascript
+const courses = [
+  { id: 1, name: "a" },
+  { id: 2, name: "b" },
+  { id: 3, name: "c" },
+];
+
+const course = courses.find(function(course) {
+    return course.name === 'a'
+})
+const courseIndex = courses.findIndex(function(course) {
+    return course.name === 'a'
+})
+
+console.log(course)
+console.log(courseIndex)
+```
