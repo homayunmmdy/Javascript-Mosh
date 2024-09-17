@@ -1,9 +1,4 @@
-const numbers = [3, 4];
-// End
-numbers.push(5, 6);
-// Beginning
-numbers.unshift(1, 2);
-// Middle
-numbers.splice(2,0,"a" , "b")
+const numbers = [1, 2, 3, 1, 4];
 
-console.log(numbers);
+console.log(numbers.indexOf(3))
+console.log(numbers.lastIndexOf(1));
