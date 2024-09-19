@@ -1,22 +1,11 @@
-const numbers = [2, 3, 1];
+const numbers = [2, -1, 3, 1];
 
-console.log(numbers.sort());
-console.log(numbers.reverse());
-
-const courses = [
-  { id: 1, name: "Nodejs" },
-  { id: 2, name: "javaScript" },
-];
-
-courses.sort(function (a, b) {
-  // a < b => -1
-  // a > b => 1
-  // a === b => 0
-  const nameA = a.name.toLocaleLowerCase();
-  const nameB = b.name.toLocaleLowerCase();
-  if (nameA < nameB) return -1;
-  if (nameA > nameB) return 1;
-  return;
+const allPositive = numbers.every(function (value) {
+  return value >= 0;
 });
 
-console.log(courses);
+const atLeastOnePositive = numbers.some(function (value) {
+  return value >= 0;
+});
+
+console.log(allPositive)
