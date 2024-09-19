@@ -1065,7 +1065,38 @@ console.log(allPositive);
 ```javascript
 const numbers = [2, -1, 3, 1];
 
-const filtered = numbers.filte((value) => value >= 0);
+const filtered = numbers.filter((value) => value >= 0);
 
 console.log(filtered);
+```
+
+## Mapping an array
+
+rember map and filter all just create new array and modified that
+they not change the main array
+
+```javascript
+const numbers = [2, -1, 3, 1];
+
+const filtered = numbers.filter((value) => value >= 0);
+
+const items = filtered.map((n) => "<li>" + n + "<li>");
+
+const html = "<ul>" + items.join("") + "</ul>";
+
+console.log(html);
+```
+
+another example
+
+```javascript
+const numbers = [1, -1, 2, 3];
+
+const items = numbers
+  .filter((value) => value >= 0)
+  .map((n) => ({ value: n }))
+  .filter((obj) => obj.value > 1)
+  .map((obj) => obj.value);
+
+console.log(items);
 ```
