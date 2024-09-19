@@ -1,17 +1,9 @@
-let numbers = [1, 2, 3, 4];
-let another = numbers;
+const first = [1,2,3];
+const second = [4,5,6];
 
-// solution 1
-// number = [];
+const combined = first.concat(second);
 
-// solution 2
-// numbers.length = 0
+const slice = combined.slice();
 
-// solution 3
-// numbers.splice(0,numbers.length)
-
-// solution 4
-// while (numbers.length > 0) numbers.pop();
-
-console.log(numbers);
-console.log(another);
+console.log(combined);
+console.log(slice);
