@@ -982,11 +982,22 @@ console.log(slice);
 ```
 
 we have better way to copy with spread and you had more flexiablity
-```javascript
-const first = [1,2,3];
-const second = [4,5,6];
 
-const combined = [...first,'a', ...second,'b']
+```javascript
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = [...first, "a", ...second, "b"];
 
 console.log(combined);
+```
+
+## Iterating an Array
+
+```javascript
+const numbers = [1, 2, 3];
+
+for (let number of numbers) console.log(number);
+
+numbers.forEach((number, index) => console.log(index, number));
 ```

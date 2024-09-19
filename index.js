@@ -1,6 +1,5 @@
-const first = [1,2,3];
-const second = [4,5,6];
+const numbers = [1, 2, 3];
 
-const combined = [...first,'a', ...second,'b']
+for (let number of numbers) console.log(number);
 
-console.log(combined);
+numbers.forEach((number, index) => console.log(index,number));
