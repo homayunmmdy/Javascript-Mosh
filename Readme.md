@@ -1007,17 +1007,17 @@ numbers.forEach((number, index) => console.log(index, number));
 ```javascript
 const numbers = [1, 2, 3];
 
-console.log(numbers.join(','))
+console.log(numbers.join(","));
 
-const message = 'This is my first message';
-const parts = message.split(' ');
+const message = "This is my first message";
+const parts = message.split(" ");
 console.log(parts);
 
-const combine = parts.join('-');
-console.log(combine)
+const combine = parts.join("-");
+console.log(combine);
 ```
 
-## sorting array 
+## sorting array
 
 ```javascript
 const numbers = [2, 3, 1];
@@ -1042,10 +1042,10 @@ courses.sort(function (a, b) {
 });
 
 console.log(courses);
-
 ```
 
 ## Testing the Elements of an Array
+
 ```javascript
 const numbers = [2, -1, 3, 1];
 
@@ -1057,5 +1057,15 @@ const atLeastOnePositive = numbers.some(function (value) {
   return value >= 0;
 });
 
-console.log(allPositive)
+console.log(allPositive);
+```
+
+## filtering the array
+
+```javascript
+const numbers = [2, -1, 3, 1];
+
+const filtered = numbers.filte((value) => value >= 0);
+
+console.log(filtered);
 ```
