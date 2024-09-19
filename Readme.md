@@ -934,11 +934,35 @@ const course = courses.find((course) => course.name === "a");
 const numbers = [1, 2, 3, 4];
 
 // End
-console.log(numbers.pop()) // 4
+console.log(numbers.pop()); // 4
 
 // Beginning
-console.log(numbers.shift()) // 1
+console.log(numbers.shift()); // 1
 
 // Middle
 console.log(numbers.splice(1, 1)); // [3]
+```
+
+## Emptying an Array
+
+solution one and two are best and last is the worest
+
+```javascript
+let numbers = [1, 2, 3, 4];
+let another = numbers;
+
+// solution 1
+// number = [];
+
+// solution 2
+// numbers.length = 0
+
+// solution 3
+// numbers.splice(0,numbers.length)
+
+// solution 4
+// while (numbers.length > 0) numbers.pop();
+
+console.log(numbers);
+console.log(another);
 ```
