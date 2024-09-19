@@ -1001,3 +1001,18 @@ for (let number of numbers) console.log(number);
 
 numbers.forEach((number, index) => console.log(index, number));
 ```
+
+## Joining Arrays
+
+```javascript
+const numbers = [1, 2, 3];
+
+console.log(numbers.join(','))
+
+const message = 'This is my first message';
+const parts = message.split(' ');
+console.log(parts);
+
+const combine = parts.join('-');
+console.log(combine)
+```
