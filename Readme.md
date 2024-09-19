@@ -1102,7 +1102,9 @@ console.log(items);
 ```
 
 ## Reducing an Array
+
 if you don't provide the second element it will pick the first to starter
+
 ```javascript
 const numbers = [10, -1, 2, 3];
 
@@ -1118,10 +1120,10 @@ console.log(sum);
 const result = numbers.reduce((a, c) => a + c);
 
 console.log(result);
-
 ```
 
 ## Exercise 1- Array from Range
+
 ```javascript
 const numbers = arrayFormRage(1, 20);
 
@@ -1134,10 +1136,10 @@ function arrayFormRage(min, max) {
   }
   return output;
 }
-
 ```
 
 ## Exercise 2- Includes
+
 ```javascript
 const numbers = [1, 2, 3, 4];
 
@@ -1147,4 +1149,22 @@ function Myincludes(array, searchElement) {
 }
 
 console.log(Myincludes(numbers, 4));
+```
+
+## Exercise 3- Except
+
+```javascript
+const numbers = [1, 2, 3, 1, 4];
+
+const output = expcept(numbers, [1]);
+
+console.log(output);
+
+function expcept(array, excluded) {
+  const output = [];
+  for (let element of array) {
+    if (!excluded.includes(element)) output.push(element);
+  }
+  return output;
+}
 ```
