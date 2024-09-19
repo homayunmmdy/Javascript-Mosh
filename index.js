@@ -1,11 +1,8 @@
-const numbers = arrayFormRage(1, 20);
+const numbers = [1, 2, 3, 4];
 
-console.log(numbers);
-
-function arrayFormRage(min, max) {
-  const output = [];
-  for (let i = min; i <= max; i++) {
-    output.push(i);
-  }
-  return output;
+function Myincludes(array, searchElement) {
+  for (let element of array) if (element === searchElement) return true;
+  return false;
 }
+
+console.log(Myincludes(numbers, 4));
