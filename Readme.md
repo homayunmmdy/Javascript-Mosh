@@ -1276,3 +1276,6 @@ let run = function () {
   console.log("walk");
 };
 ```
+
+### Difference Function Declaration and Expression
+- in function declaration we call it before declration and will hosted by javascript engine it's mean it's move to top.
