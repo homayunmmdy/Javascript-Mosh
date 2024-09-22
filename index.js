@@ -1,5 +1,5 @@
-function sum(...args) {
-  return args.reduce((a, b) => a + b);
+function interest(principle, rate = 3.5, year = 5) {
+  return ((principle * rate) / 100) * year;
 }
 
-console.log(sum(1, 2, 3, 4, 5, 19));
+console.log(interest(10000));

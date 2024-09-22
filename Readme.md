@@ -1299,3 +1299,14 @@ function sum(...args) {
 
 console.log(sum(1, 2, 3, 4, 5, 19));
 ```
+
+## Default Parameter
+make sure if you add default value your must define for all of the arguments after that
+
+```javascript
+function interest(principle, rate = 3.5, year = 5) {
+  return ((principle * rate) / 100) * year;
+}
+
+console.log(interest(10000));
+```
