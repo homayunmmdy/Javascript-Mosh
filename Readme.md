@@ -1170,6 +1170,7 @@ function expcept(array, excluded) {
 ```
 
 ## Exercise 4- Moving an Element
+
 ```javascript
 const numbers = [1, 2, 3, 4];
 
@@ -1189,7 +1190,6 @@ function move(array, index, offset) {
   output.splice(index + offset, 0, element);
   return output;
 }
-
 ```
 
 ## Exercise 5- Count Occurrences
@@ -1210,10 +1210,9 @@ function countOccurrences(array, searchElement) {
 
   array.reduce((a, c) => {
     const occurrence = c === searchElement ? 1 : 0;
-    return a + occurrence
+    return a + occurrence;
   }, 0);
 }
-
 ```
 
 ## Exercise 6- Get Max
@@ -1235,10 +1234,10 @@ function getMax(array) {
 
   return array.reduce((a, b) => (a > b ? a : b));
 }
-
 ```
 
 ## Exercise 7- Movies
+
 ```javascript
 const movies = [
   { title: "a", year: 2024, rating: 4.5 },
@@ -1259,12 +1258,12 @@ const titles = movies
   .map((m) => m.title);
 
 console.log(titles);
-
 ```
 
 # Functions
 
 ## Function Declaration and Expression
+
 ```javascript
 // Function Declaration
 function walk() {
@@ -1278,9 +1277,11 @@ let run = function () {
 ```
 
 ### Difference Function Declaration and Expression
+
 - in function declaration we call it before declration and will hosted by javascript engine it's mean it's move to top.
 
 ## Arguments
+
 ```javascript
 function sum() {
   let total = 0;
@@ -1292,6 +1293,7 @@ console.log(sum(1, 2, 3, 4, 5, 19));
 ```
 
 ## Rest Operations
+
 ```javascript
 function sum(...args) {
   return args.reduce((a, b) => a + b);
@@ -1301,6 +1303,7 @@ console.log(sum(1, 2, 3, 4, 5, 19));
 ```
 
 ## Default Parameter
+
 make sure if you add default value your must define for all of the arguments after that
 
 ```javascript
@@ -1309,4 +1312,30 @@ function interest(principle, rate = 3.5, year = 5) {
 }
 
 console.log(interest(10000));
+```
+
+## Getter and Setters
+
+getter method returns its value while a setter method sets or updates its value
+
+```javascript
+const person = {
+  firstName: "Homayoun",
+  lastName: "Mohammadi",
+  get fullName() {
+    return `${person.firstName} ${person.lastName}`;
+  },
+  set fullName(value) {
+    const parts = value.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+
+// getter => access properties
+// setter => change (mutate) them
+
+person.fullName = "John Smith";
+
+console.log(person.fullName);
 ```
