@@ -1341,47 +1341,47 @@ console.log(person.fullName);
 ```
 
 ## Try and Catch
+
 ```javascript
 const person = {
   firstName: "Homayoun",
   lastName: "Mohammadi",
   get fullName() {
-    return `${person.firstName} ${person.lastName}`
+    return `${person.firstName} ${person.lastName}`;
   },
   set fullName(value) {
-    if(typeof value !== 'string')
-      throw new Error('Value is not a string.')
+    if (typeof value !== "string") throw new Error("Value is not a string.");
 
-    const parts = value.split(' ');
-    if(parts.length !== 2)
-        throw new Error('Enter first and last name')
+    const parts = value.split(" ");
+    if (parts.length !== 2) throw new Error("Enter first and last name");
     this.firstName = parts[0];
-    this.lastName = parts[1]
-  }
-}
+    this.lastName = parts[1];
+  },
+};
 
-// getter => access properties 
+// getter => access properties
 // setter => change (mutate) them
 
 try {
-  person.fullName = '';
-}catch(e) {
-  alert(e)
+  person.fullName = "";
+} catch (e) {
+  alert(e);
 }
 
-console.log(person.fullName)
+console.log(person.fullName);
 ```
 
-## Local Vs Global Scope 
+## Local Vs Global Scope
+
 Variables with global scope are available from all other scopes within the JavaScript code. Variables with local scope are available only within a specific local context and are created by keywords, such as var , let , and const .
 avoid create global as much as possible.
 
 ```javascript
-const color = 'red'
+const color = "red";
 function start() {
   const message = "hi";
-  const color = 'blue'
-  console.log(color)
+  const color = "blue";
+  console.log(color);
 }
 
 function stop() {
@@ -1389,89 +1389,146 @@ function stop() {
 }
 
 start();
-
 ```
 
-## var vs let 
-the scope of the var is not limit the scope of the block. It's limited to the function and as an exmaple when we log the i we don't 
+## var vs let
+
+the scope of the var is not limit the scope of the block. It's limited to the function and as an exmaple when we log the i we don't
 see any error.
 
-var => function-scoped 
+var => function-scoped
 let,const => block-scoped
+
 ```javascript
 function start() {
   for (var i = 0; i < 5; i++) {
     console.log(i);
   }
 
-  console.log(i)
+  console.log(i);
 }
 
-start()
-
+start();
 ```
+
 another example now color is visible here
+
 ```javascript
 function start() {
   for (var i = 0; i < 5; i++) {
-    if(true) {
-      var color = 'red'
+    if (true) {
+      var color = "red";
     }
   }
 
-  console.log(color)
+  console.log(color);
 }
 ```
 
 another probles is that when we defined the global variable using var it's attatch to the window object now if we write window.color we will see read in browser
+
 ```javascript
-var color = 'red';
+var color = "red";
 let age = 30;
 ```
 
 # This in javascript
+
 This reference the Object is excuting the current function
 if we call this inside method it's refer to object
+
 ```javascript
 const video = {
-  title: 'a',
+  title: "a",
   play() {
-    console.log(this)
-  }
-}
+    console.log(this);
+  },
+};
 ```
 
 if we use this inside the function it's refer to global value
+
 ```javascript
 // function -> global (window, global)
 function playVideo() {
-  console.log(this)
+  console.log(this);
 }
 ```
 
 but in construtcure function it's refer into new object
+
 ```javascript
 function Video(title) {
   this.title = title;
-  console.log(this)
+  console.log(this);
 }
 ```
 
-look at this example 
+look at this example
+
 ```javascript
 const tags = {
-  title: 'a',
-  tags: ['a','b','c'],
+  title: "a",
+  tags: ["a", "b", "c"],
   showTags() {
-    this.tags.forEach(function(tag) {
-      console.log(this ,tag)
-    })
-  }
-}
+    this.tags.forEach(function (tag) {
+      console.log(this, tag);
+    });
+  },
+};
 ```
+
 this is refer into global , window becuase it's inside the function but if we rpelace that with arrow function we will get the object because arrow function dose not have own this and it's refer the parent
 
 some other way to access the title and show next to each tag
+
+```javascript
+const tags = {
+  title: "a",
+  tags: ["a", "b", "c"],
+  showTags() {
+    this.tags.forEach(function (tag) {
+      console.log(this.title, tag);
+    }, this);
+  },
+};
+```
+
+using the callback and second argument of hte forEach and in the second it's refer the object
+
+## Change the value of this
+
+imagine the scond argument of the forEach is not exist
+this one way but don't use this approach
+
+```javascript
+const tags = {
+  title: "a",
+  tags: ["a", "b", "c"],
+  showTags() {
+    const self = this;
+    this.tags.forEach(function (tag) {
+      console.log(self.title, tag);
+    });
+  },
+};
+```
+
+```javascript
+function playVideo(a, b) {
+  console.log(this);
+}
+
+playVideo.call({ name: "homayoun" }, 1, 2);
+playVideo.apply({ name: "homayoun" }, [1, 2]);
+playVideo.bind({ name: "homayoun" }, [1, 2]);
+```
+
+now in this example we change the refer of this from the global , window into this object the only different of call apply is the way that we pass the data for apply we must pass it as in array.
+
+bind: but this bind dose not call playVideo Function it return new function and put into this function permenetly now matter how we call this allways point the object we decalse ower there.
+
+here is bind method the fix the solution
 ```javascript
 const tags = {
   title: 'a',
@@ -1479,8 +1536,24 @@ const tags = {
   showTags() {
     this.tags.forEach(function(tag) {
       console.log(this.title ,tag)
-    }, this)
+    }.bind(this))
   }
 }
+
+tags.showTags()
 ```
-using the callback and second argument of hte forEach and in the second it's refer the object
+
+we can solve it by arrow function because it's inherit from parents
+```javascript
+const tags = {
+  title: 'a',
+  tags: ['a','b','c'],
+  showTags() {
+    this.tags.forEach(tag => {
+      console.log(this.title ,tag)
+    })
+  }
+}
+
+tags.showTags()
+```
