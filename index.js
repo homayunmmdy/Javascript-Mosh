@@ -1,10 +1,7 @@
-// Function Declaration
-function walk() {
-  console.log("walk");
+function sum() {
+  let total = 0;
+  for (let value of arguments) total += value;
+  return total;
 }
 
-// Function Expression
-let run = function () {
-  console.log("walk");
-};
-
+console.log(sum(1, 2, 3, 4, 5, 19));

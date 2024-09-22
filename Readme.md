@@ -1279,3 +1279,14 @@ let run = function () {
 
 ### Difference Function Declaration and Expression
 - in function declaration we call it before declration and will hosted by javascript engine it's mean it's move to top.
+
+## Arguments
+```javascript
+function sum() {
+  let total = 0;
+  for (let value of arguments) total += value;
+  return total;
+}
+
+console.log(sum(1, 2, 3, 4, 5, 19));
+```
