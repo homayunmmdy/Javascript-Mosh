@@ -1428,3 +1428,59 @@ another probles is that when we defined the global variable using var it's attat
 var color = 'red';
 let age = 30;
 ```
+
+# This in javascript
+This reference the Object is excuting the current function
+if we call this inside method it's refer to object
+```javascript
+const video = {
+  title: 'a',
+  play() {
+    console.log(this)
+  }
+}
+```
+
+if we use this inside the function it's refer to global value
+```javascript
+// function -> global (window, global)
+function playVideo() {
+  console.log(this)
+}
+```
+
+but in construtcure function it's refer into new object
+```javascript
+function Video(title) {
+  this.title = title;
+  console.log(this)
+}
+```
+
+look at this example 
+```javascript
+const tags = {
+  title: 'a',
+  tags: ['a','b','c'],
+  showTags() {
+    this.tags.forEach(function(tag) {
+      console.log(this ,tag)
+    })
+  }
+}
+```
+this is refer into global , window becuase it's inside the function but if we rpelace that with arrow function we will get the object because arrow function dose not have own this and it's refer the parent
+
+some other way to access the title and show next to each tag
+```javascript
+const tags = {
+  title: 'a',
+  tags: ['a','b','c'],
+  showTags() {
+    this.tags.forEach(function(tag) {
+      console.log(this.title ,tag)
+    }, this)
+  }
+}
+```
+using the callback and second argument of hte forEach and in the second it's refer the object
