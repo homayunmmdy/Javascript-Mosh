@@ -1371,3 +1371,23 @@ try {
 
 console.log(person.fullName)
 ```
+
+## Local Vs Global Scope 
+Variables with global scope are available from all other scopes within the JavaScript code. Variables with local scope are available only within a specific local context and are created by keywords, such as var , let , and const .
+avoid create global as much as possible.
+
+```javascript
+const color = 'red'
+function start() {
+  const message = "hi";
+  const color = 'blue'
+  console.log(color)
+}
+
+function stop() {
+  const message = "bye";
+}
+
+start();
+
+```
