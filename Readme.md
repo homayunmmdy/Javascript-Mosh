@@ -1391,3 +1391,40 @@ function stop() {
 start();
 
 ```
+
+## var vs let 
+the scope of the var is not limit the scope of the block. It's limited to the function and as an exmaple when we log the i we don't 
+see any error.
+
+var => function-scoped 
+let,const => block-scoped
+```javascript
+function start() {
+  for (var i = 0; i < 5; i++) {
+    console.log(i);
+  }
+
+  console.log(i)
+}
+
+start()
+
+```
+another example now color is visible here
+```javascript
+function start() {
+  for (var i = 0; i < 5; i++) {
+    if(true) {
+      var color = 'red'
+    }
+  }
+
+  console.log(color)
+}
+```
+
+another probles is that when we defined the global variable using var it's attatch to the window object now if we write window.color we will see read in browser
+```javascript
+var color = 'red';
+let age = 30;
+```
