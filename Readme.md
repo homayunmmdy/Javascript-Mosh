@@ -1529,31 +1529,47 @@ now in this example we change the refer of this from the global , window into th
 bind: but this bind dose not call playVideo Function it return new function and put into this function permenetly now matter how we call this allways point the object we decalse ower there.
 
 here is bind method the fix the solution
+
 ```javascript
 const tags = {
-  title: 'a',
-  tags: ['a','b','c'],
+  title: "a",
+  tags: ["a", "b", "c"],
   showTags() {
-    this.tags.forEach(function(tag) {
-      console.log(this.title ,tag)
-    }.bind(this))
-  }
-}
+    this.tags.forEach(
+      function (tag) {
+        console.log(this.title, tag);
+      }.bind(this)
+    );
+  },
+};
 
-tags.showTags()
+tags.showTags();
 ```
 
 we can solve it by arrow function because it's inherit from parents
+
 ```javascript
 const tags = {
-  title: 'a',
-  tags: ['a','b','c'],
+  title: "a",
+  tags: ["a", "b", "c"],
   showTags() {
-    this.tags.forEach(tag => {
-      console.log(this.title ,tag)
-    })
-  }
+    this.tags.forEach((tag) => {
+      console.log(this.title, tag);
+    });
+  },
+};
+
+tags.showTags();
+```
+
+### Exercise 1- Sum of Arguments
+
+```javascript
+function sum(...items) {
+  if (items.length === 1 && Array.isArray(items[0]))
+    for (key of items) return key.reduce((a, b) => a + b);
+  else return items.reduce((a, b) => a + b);
 }
 
-tags.showTags()
+console.log(sum([1, 2, 3, 4]));
 ```
