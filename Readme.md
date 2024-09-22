@@ -1261,3 +1261,18 @@ const titles = movies
 console.log(titles);
 
 ```
+
+# Functions
+
+## Function Declaration and Expression
+```javascript
+// Function Declaration
+function walk() {
+  console.log("walk");
+}
+
+// Function Expression
+let run = function () {
+  console.log("walk");
+};
+```
