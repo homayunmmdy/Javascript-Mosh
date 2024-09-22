@@ -1573,3 +1573,16 @@ function sum(...items) {
 
 console.log(sum([1, 2, 3, 4]));
 ```
+
+### Exercise 2- Area of Circle
+
+```javascript
+const circle = {
+  radius: 1,
+  get area() {
+    return Math.PI * this.radius * this.radius;
+  },
+};
+
+console.log(circle.area)
+```

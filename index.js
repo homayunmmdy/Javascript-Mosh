@@ -1,7 +1,8 @@
-function sum(...items) {
-  if (items.length === 1 && Array.isArray(items[0]))
-    for (key of items) return key.reduce((a, b) => a + b);
-  else return items.reduce((a, b) => a + b);
-}
+const circle = {
+  radius: 1,
+  get area() {
+    return Math.PI * this.radius * this.radius;
+  },
+};
 
-console.log(sum([1, 2, 3, 4]));
+console.log(circle.area)
