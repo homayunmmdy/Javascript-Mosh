@@ -1,4 +1,4 @@
-## Ultimate JavaScript Part 1: Fundamentals – Learning Notes
+## Ultimate JavaScript Part 1: Fundamentals
 
 ![Screenshot 2025-05-22 182159](https://github.com/user-attachments/assets/60b1583c-357e-494e-b352-a79472f89c44)
 
@@ -26,3 +26,8 @@ Key concepts covered:
 ### 💡 Why I Took This Course
 
 Even though I already use JavaScript in development, I took this course to **solidify my understanding of the language’s fundamentals**, ensuring that I write code that is not only functional, but also clean, maintainable, and scalable. This solid base has helped me progress confidently into more advanced JavaScript topics and frameworks.
+
+### 📢 Note on Course Access
+Due to international sanctions in Iran, I was unable to access the official Code With Mosh platform directly. I obtained the course through a third-party distributor and completed it in full. While I do not have an official certificate, I carefully followed all course content and documented my learning here.
+
+For courses that included hands-on projects, the completed work is available in this repository. For others that were more theory-focused, I’ve included comprehensive notes, summaries, and all relevant materials as evidence of completion and understanding.
